@@ -19,6 +19,14 @@ Route::get('/news', function () {
     return view('welcome');
 });
 
+Route::get('/app', function () {
+    return view('join_us');
+});
+
+Route::get('/community', function () {
+    return view('join_us');
+});
+
 Route::get('/join-us', function () {
     return view('join_us');
 });
