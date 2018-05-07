@@ -20,11 +20,11 @@ Route::get('/news', function () {
 });
 
 Route::get('/app', function () {
-    return view('join_us');
+    return view('pages.app');
 });
 
 Route::get('/community', function () {
-    return view('join_us');
+    return view('pages.app');
 });
 
 Route::get('/join-us', function () {

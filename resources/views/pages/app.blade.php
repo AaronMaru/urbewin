@@ -17,87 +17,43 @@
     <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
     <!-- Custom styles for this template -->
     <link href="css/creative.css" rel="stylesheet">
+    <link href="css/join-us.css" rel="stylesheet">
 </head>
 
 <body id="page-top">
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
         <div class="container">
-            <img src="{{ url('images/new_logo/white.jpg') }}" width="100" height="30px" id="logo">
+            <img src="{{ url('images/new_logo/blue.jpg') }}" width="100" height="30px" id="logo">
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="/">HOME</a>
+                        <a class="nav-link js-scroll-trigger" href="/" style="color: black">HOME</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="/news">NEWS</a>
+                        <a class="nav-link js-scroll-trigger" href="/news" style="color: black">NEWS</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="/app">APP</a>
+                        <a class="nav-link js-scroll-trigger" href="/app" style="color: black">APP</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="/community">COMMUNITY</a>
+                        <a class="nav-link js-scroll-trigger" href="/community" style="color: black">COMMUNITY</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="/join-us">JOIN US</a>
+                        <a class="nav-link js-scroll-trigger" href="/join-us" style="color: black">JOIN US</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-
-    <header class="masthead text-center text-blue d-flex">
-        <div class="container my-auto">
-            <div class="row">
-                <div class="col-lg-10 mx-auto">
-                    <h1 class="text-uppercase">
-              <img src="{{ url('img/index/banner_logo.png') }}">
-            </h1>
-                    <hr>
-                </div>
-                <div class="col-lg-8 mx-auto">
-                    <p class="text-faded mb-5">Start Bootstrap can help you build better websites using the Bootstrap CSS framework! Just download your template and start going, no strings attached!</p>
-                    <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a>
-                </div>
-            </div>
-        </div>
-    </header>
-    <section class="bg-primary">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 mx-auto text-center">
-                    <h2 class="section-heading text-blue">We've got what you need!</h2>
-                    <p class="text-blue mb-4">Start Bootstrap has everything you need to get your new website up and running in no time!</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-1 mx-auto">
-                </div>
-                <div class="col-lg-5 mx-auto">
-                    <p class="text-blue mb-4">Start Bootstrap has everything you need to get your new website up and running in no time!</p>
-                </div>
-                <div class="col-lg-5 mx-auto">
-                    <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section>
-        <div class="container">
-            <div class="row">
-                <img src="{{ url('img/index/picture_1.png') }}" class="img-fluid">
-            </div>
-    </section>
     <section class="section_3">
         <div class="container my-auto">
             <div class="row">
                 <div class="col-lg-5 mx-auto section_3_img">
-                    <img src="{{ url('img/index/picture_2.png') }}" class="img-fluid" height="100px">
+                    <img src="{{ url('images/download/picture_1.png') }}" class="img-fluid" height="100px">
                 </div>
                 <div class="col-lg-5 mx-auto section_3_text">
                     <p class="text-faded text-blue mb-5">Start Bootstrap can help you build better websites using the Bootstrap CSS framework! Just download your template and start going, no strings attached!</p>
@@ -112,30 +68,13 @@
                     <p class="text-faded text-blue mb-5">Start Bootstrap can help you build better websites using the Bootstrap CSS framework! Just download your template and start going, no strings attached!</p>
                 </div>
                 <div class="col-lg-5 mx-auto section_3_img">
-                    <img src="{{ url('img/index/picture_2.png') }}" class="img-fluid" height="100px">
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="section_5">
-        <div class="container my-auto">
-            <div class="row">
-                <div class="col-lg-5 mx-auto section_3_img">
-                    <img src="{{ url('img/index/picture_2.png') }}" class="img-fluid" height="100px">
-                </div>
-                <div class="col-lg-5 mx-auto section_3_text">
-                    <p class="text-faded text-blue mb-5">Start Bootstrap can help you build better websites using the Bootstrap CSS framework! Just download your template and start going, no strings attached!</p>
+                    <img src="{{ url('images/download/picture_2.png') }}" class="img-fluid" height="100px">
                 </div>
             </div>
         </div>
     </section>
     <section class="section_6">
         <div class="container my-auto">
-            <div class="row">
-                <div class="col-lg-5 mx-auto text-center">
-                    <p class="text-faded text-blue mb-5">Start Bootstrap can help you build better</p>
-                </div>
-            </div>
             <div class="row">
                 <div class="col-lg-3"></div>
                 <div class="col-lg-1 mx-auto text-center">
@@ -158,7 +97,6 @@
             </div>
         </div>
     </section>
-    
     <footer>
         <div class="container">
             <div class="pull-left">
@@ -184,7 +122,7 @@
     <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
     <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
     <!-- Custom scripts for this template -->
-    <script src="js/creative.js"></script>
+    {{-- <script src="js/creative.js"></script> --}}
 </body>
 
 </html>

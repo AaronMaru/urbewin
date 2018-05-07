@@ -30,10 +30,10 @@
   var navbarCollapse = function() {
     if ($("#mainNav").offset().top > 100) {
       $("#mainNav").addClass("navbar-shrink");
-      $("#logo").attr('src', 'images/navigation_bar_and_bottom/navigation_bar_logo_black.png');
+      $("#logo").attr('src', 'images/new_logo/blue.jpg');
     } else {
       $("#mainNav").removeClass("navbar-shrink");
-      $("#logo").attr('src', 'images/navigation_bar_and_bottom/navigation_bar_logo_white.png');
+      $("#logo").attr('src', 'images/new_logo/white.jpg');
     }
   };
   // Collapse now if page is not at top
