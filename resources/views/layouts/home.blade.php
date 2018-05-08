@@ -17,78 +17,72 @@
     <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
     <!-- Custom styles for this template -->
     <link href="css/creative.css" rel="stylesheet">
-    <link href="css/join-us.css" rel="stylesheet">
 </head>
 
 <body id="page-top">
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
         <div class="container">
-            <img src="{{ url('images/new_logo/blue.png') }}" width="100" height="30px" id="logo">
+            <img src="{{ url('images/new_logo/white.png') }}" width="50" height="30px" id="logo">
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="/" style="color: black">{{ trans('file.string') }}</a>
+                        <a class="nav-link js-scroll-trigger" href="/">{{ trans('file.menu_home') }}</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="/news" style="color: black">NEWS</a>
+                        <a class="nav-link js-scroll-trigger" href="/news">{{ trans('file.menu_news') }}</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="/app" style="color: black">APP</a>
+                        <a class="nav-link js-scroll-trigger" href="/app">{{ trans('file.menu_app') }}</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="/community" style="color: black">COMMUNITY</a>
+                        <a class="nav-link js-scroll-trigger" href="/community">{{ trans('file.menu_community') }}</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="/join-us" style="color: black">JOIN US</a>
+                        <a class="nav-link js-scroll-trigger" href="/join-us">{{ trans('file.menu_join_us') }}</a>
                     </li>
-
-                    <form action="language" method="post">
-                        <select name="local" id="local">
-                            <option value="valvo">Eng</option>
-                            <option value="valvo">Ch</option>
-                        </select>
-                        <input type="submit" value="submit">
-                        {{ csrf_field() }}
-                    </form>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          {{ App::getLocale()=='zh' ? '中文' : 'ENG' }}
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                          <a class="dropdown-item" href="{{ url('/language') }}">中文</a>
+                          <a class="dropdown-item" href="{{ url('/language') }}">ENG</a>
+                        </div>
+                    </li>
+                   <li class="nav-item">
+                        <ul class="dropdown-menu">
+                            <li>eng</li>
+                            <li>zh</li>
+                        </ul>
+                       <!-- <form action="language" method="post" id="language">
+                           <select name="locale" id="locale" class="form-control">
+                               <option value="zh" {{ App::getLocale()=='zh' ? ' selected' : '' }}>中文</option>
+                               <option value="en" {{ App::getLocale()=='en' ? ' selected' : '' }}>ENG</option>
+                           </select>
+                           {{ csrf_field() }}
+                       </form> -->
+                   </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <section class="section_3">
-        <div class="container my-auto">
-            <div class="row">
-                <div class="col-lg-5 mx-auto section_3_img">
-                    <img src="{{ url('images/download/picture_1.png') }}" class="img-fluid" height="100px">
-                </div>
-                <div class="col-lg-5 mx-auto section_3_text">
-                    <p class="text-faded text-blue mb-5">Start Bootstrap can help you build better websites using the Bootstrap CSS framework! Just download your template and start going, no strings attached!</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="section_4">
-        <div class="container my-auto">
-            <div class="row">
-                <div class="col-lg-5 mx-auto section_3_text">
-                    <p class="text-faded text-blue mb-5">Start Bootstrap can help you build better websites using the Bootstrap CSS framework! Just download your template and start going, no strings attached!</p>
-                </div>
-                <div class="col-lg-5 mx-auto section_3_img">
-                    <img src="{{ url('images/download/picture_2.png') }}" class="img-fluid" height="100px">
-                </div>
-            </div>
-        </div>
-    </section>
+    @yield('content')
     <section class="section_6">
         <div class="container my-auto">
+            <div class="row">
+                <div class="col-lg-5 mx-auto text-center">
+                    <p class="text-faded text-blue mb-5">{{ trans('file.home_section_six') }}</p>
+                </div>
+            </div>
             <div class="row">
                 <div class="col-lg-3"></div>
                 <div class="col-lg-1 mx-auto text-center">
                     <img src="{{ url('img/index/WeChat.jpg') }}" class="img-fluid" height="100px">
-                    <p class="text-faded text-blue mb-5">Wechat</p>
+                    <p class="text-faded text-blue mb-5">{{ trans('file.wechat') }}</p>
                 </div>
                 <div class="col-lg-1 mx-auto text-center">
                     <img src="{{ url('img/index/fb.jpg') }}" class="img-fluid" height="100px">
@@ -116,9 +110,9 @@
             </div>
             <div class="pull-right">
                 <div class="row footer-right">
-                    <a href="" class="lang">ch</a>
+                    <a href="" class="lang">中文</a>
                     <p class="lang">|</p>
-                    <a href="" class="lang">eng</a>
+                    <a href="" class="lang">ENG</a>
                 </div>
             </div>
         </div>
@@ -131,7 +125,7 @@
     <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
     <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
     <!-- Custom scripts for this template -->
-    <script src="js/creative1.js"></script>
+    <script src="js/creative.js"></script>
 </body>
 
 </html>

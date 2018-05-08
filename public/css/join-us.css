@@ -1,26 +1,33 @@
 .menu-black {
     color: #212529;
 }
+
 .join-us {
     margin-top: 70px;
 }
+
 .join-us-card {
     margin-top: 20px;
 }
 
 .btn-join-us {
-	background-color: #5b72c6 !important;
-	color: #fff !important;
+    background-color: #5b72c6 !important;
+    color: #fff !important;
 }
 
-.card{
+.card {
+    background-color: #fbfbff;
+}
+
+.card-text-header {
+    color: #5b72c6;
+}
+
+.card-text-requirement {
+    font-size: 0.7em;
+}
+
+.card-footer {
+	border: none;
 	background-color: #fbfbff;
-}
-
-.card-text-header{
-	color: #5b72c6;
-}
-
-.card-text-requirement{
-	font-size: 0.7em;
 }

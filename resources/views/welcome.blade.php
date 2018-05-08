@@ -23,7 +23,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
         <div class="container">
-            <img src="{{ url('images/navigation_bar_and_bottom/navigation_bar_logo_black.png') }}" width="100" height="30px" id="logo">
+            <img src="{{ url('images/new_logo/white.png') }}" width="100" height="30px" id="logo">
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>

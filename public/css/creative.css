@@ -282,6 +282,10 @@ header.masthead p {
     .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
         font-size: 22px;
     }
+
+    .banner {
+        margin-top: 20px;
+    }
 }
 
 .text-primary {
@@ -365,4 +369,9 @@ header.masthead p {
 
 footer, .card {
     font-size: 0.8em;
+}
+
+.btn-join-us {
+    background-color: #5b72c6 !important;
+    color: #fff !important;
 }

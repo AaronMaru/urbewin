@@ -12,8 +12,13 @@
 */
 
 Route::get('/', function () {
-    return view('layouts.app');
+    return view('pages.home');
 });
+
+Route::post('/language', [
+	'Middleware' => 'LanguageSwitcher',
+	'uses' => 'LanguageController@index',
+]);
 
 Route::get('/news', function () {
     return view('welcome');
@@ -28,5 +33,5 @@ Route::get('/community', function () {
 });
 
 Route::get('/join-us', function () {
-    return view('join_us');
+    return view('pages.join_us');
 });
