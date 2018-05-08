@@ -17,13 +17,14 @@
     <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
     <!-- Custom styles for this template -->
     <link href="css/creative.css" rel="stylesheet">
+    <link href="css/join-us.css" rel="stylesheet">
 </head>
 
 <body id="page-top">
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top navbar-shrink" id="mainNav">
         <div class="container">
-            <img src="{{ url('images/new_logo/white.png') }}" width="50" height="30px" id="logo">
+            <img src="{{ url('images/new_logo/blue.png') }}" width="50" height="30px" id="logo">
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -44,7 +45,7 @@
                     <li class="nav-item">
                         <a class="nav-link js-scroll-trigger" href="/join-us">{{ trans('file.menu_join_us') }}</a>
                     </li>
-                    <li class="nav-item dropdown">
+                    <!-- <li class="nav-item dropdown">
                         <form action="language" method="post" id="language">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                               {{ App::getLocale()=='zh' ? '中文' : 'ENG' }}
@@ -55,8 +56,8 @@
                                 <a class="dropdown-item" href="#" id="eng">ENG</a>
                             </div>
                         </form>
-                    </li>
-                   <!--  <li class="nav-item">
+                    </li> -->
+                   <li class="nav-item">
                        <form action="language" method="post" id="language">
                            <select name="locale" id="locale" class="form-control">
                                <option value="zh" {{ App::getLocale()=='zh' ? ' selected' : '' }}>中文</option>
@@ -64,7 +65,7 @@
                            </select>
                            {{ csrf_field() }}
                        </form>
-                   </li> -->
+                   </li>
                 </ul>
             </div>
         </div>
@@ -72,11 +73,6 @@
     @yield('content')
     <section class="section_6">
         <div class="container my-auto">
-            <div class="row">
-                <div class="col-lg-5 mx-auto text-center">
-                    <p class="text-faded text-blue mb-5">Start Bootstrap can help you build better</p>
-                </div>
-            </div>
             <div class="row">
                 <div class="col-lg-3"></div>
                 <div class="col-lg-1 mx-auto text-center">
@@ -109,9 +105,9 @@
             </div>
             <div class="pull-right">
                 <div class="row footer-right">
-                    <a href="" class="lang">ch</a>
+                    <a href="" class="lang">中文</a>
                     <p class="lang">|</p>
-                    <a href="" class="lang">eng</a>
+                    <a href="" class="lang">ENG</a>
                 </div>
             </div>
         </div>
@@ -124,7 +120,7 @@
     <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
     <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
     <!-- Custom scripts for this template -->
-    <script src="js/creative.js"></script>
+    <script src="js/creative1.js"></script>
 </body>
 
 </html>

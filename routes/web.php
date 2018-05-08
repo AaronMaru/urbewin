@@ -29,7 +29,7 @@ Route::get('/app', function () {
 });
 
 Route::get('/community', function () {
-    return view('pages.app');
+    return view('pages.community');
 });
 
 Route::get('/join-us', function () {

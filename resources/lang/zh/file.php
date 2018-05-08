@@ -34,4 +34,14 @@
 
 		'home_section_six' => '加入必盈社区',
 		'wechat' => '微信公众号',
+
+
+		//app
+		'app_section_1_text_1' => '必盈钱包',
+		'app_section_1_text_2' => '安全、可靠的数字货币钱包',
+		'app_section_2_text_1' => '开始使用必盈钱包',
+		'app_section_2_text_2' => '下载钱包',
+
+		//community
+		'commuity_text' => '加入社区关注必盈动态'
 	];

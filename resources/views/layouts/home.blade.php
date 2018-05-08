@@ -44,27 +44,23 @@
                     <li class="nav-item">
                         <a class="nav-link js-scroll-trigger" href="/join-us">{{ trans('file.menu_join_us') }}</a>
                     </li>
-                    <li class="nav-item dropdown">
+                    <!-- <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           {{ App::getLocale()=='zh' ? '中文' : 'ENG' }}
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                          <a class="dropdown-item" href="{{ url('/language') }}">中文</a>
-                          <a class="dropdown-item" href="{{ url('/language') }}">ENG</a>
+                          <a class="dropdown-item" href="#">中文</a>
+                          <a class="dropdown-item" href="#">ENG</a>
                         </div>
-                    </li>
+                    </li> -->
                    <li class="nav-item">
-                        <ul class="dropdown-menu">
-                            <li>eng</li>
-                            <li>zh</li>
-                        </ul>
-                       <!-- <form action="language" method="post" id="language">
+                       <form action="language" method="post" id="language">
                            <select name="locale" id="locale" class="form-control">
                                <option value="zh" {{ App::getLocale()=='zh' ? ' selected' : '' }}>中文</option>
                                <option value="en" {{ App::getLocale()=='en' ? ' selected' : '' }}>ENG</option>
                            </select>
                            {{ csrf_field() }}
-                       </form> -->
+                       </form>
                    </li>
                 </ul>
             </div>
