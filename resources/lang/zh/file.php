@@ -98,6 +98,20 @@
 		'join_us_card_4_decription_text_1' =>	 '国外：1.良好的规划能力，独立负责Facebook/Twitter/Instagram日常内容更新，发布，互动等。',
 		'join_us_card_4_decription_text_2' =>	 '国内：1.深谙微博，公众号的玩法，对日常内容的输出，增加精准粉丝。',
 
+
+		'join_us_card_5_header' => '活动策划',
+		'join_us_card_5_header_picture_1' =>	 '杭州',
+		'join_us_card_5_header_picture_2' =>	 '2人',
+		'join_us_card_5_header_picture_3' =>	 '面议',
+
+		'join_us_card_5_body_header' =>	 '工作部门',
+		'join_us_card_5_body_text' =>	 '部门名称',
+
+		'join_us_card_5_decription_header' =>	 '要求',
+		'join_us_card_5_decription_text_1' =>	 '1.定期策划APP、微信等移动端线上活动，提高粉丝用户量。',
+		'join_us_card_5_decription_text_2' =>	 '2.根据营销方案的需求，撰写方案，做好推广工作。',
+
+
 		'join_us_card_button' => '申请职位'
 
 	];
