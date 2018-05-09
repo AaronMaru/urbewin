@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\News;
 
 class NewsController extends Controller
 {
@@ -13,7 +14,8 @@ class NewsController extends Controller
      */
     public function index()
     {
-        return view('pages.news.index');
+        $data['news'] = News::all();
+        return view('pages.news.index', $data);
     }
 
     /**
@@ -23,7 +25,7 @@ class NewsController extends Controller
      */
     public function create()
     {
-        //
+        return view('pages.news.create');
     }
 
     /**
@@ -34,7 +36,8 @@ class NewsController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        News::create($request->all());
+        return redirect('news/');
     }
 
     /**
