@@ -20,9 +20,7 @@ Route::post('/language', [
 	'uses' => 'LanguageController@index',
 ]);
 
-Route::get('/news', function () {
-    return view('welcome');
-});
+Route::resource('/news','NewsController');
 
 Route::get('/app', function () {
     return view('pages.app');

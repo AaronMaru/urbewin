@@ -8,7 +8,7 @@
     <meta name="author" content="">
     <title>Creative - Start Bootstrap Theme</title>
     <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ asset('vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
     <!-- Custom fonts for this template -->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
@@ -16,8 +16,8 @@
     <!-- Plugin CSS -->
     <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
     <!-- Custom styles for this template -->
-    <link href="css/creative.css" rel="stylesheet">
-    <link href="css/join-us.css" rel="stylesheet">
+    <link href="{{ asset('css/creative.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/join-us.css') }}" rel="stylesheet">
 </head>
 
 <body id="page-top">
@@ -77,7 +77,7 @@
                 <div class="col-lg-3"></div>
                 <div class="col-lg-1 mx-auto text-center">
                     <img src="{{ url('img/index/WeChat.jpg') }}" class="img-fluid" height="100px">
-                    <p class="text-faded text-blue mb-5">Wechat</p>
+                    <p class="text-faded text-blue mb-5">{{ trans('file.wechat') }}</p>
                 </div>
                 <div class="col-lg-1 mx-auto text-center">
                     <img src="{{ url('img/index/fb.jpg') }}" class="img-fluid" height="100px">

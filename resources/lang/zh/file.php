@@ -43,5 +43,61 @@
 		'app_section_2_text_2' => '下载钱包',
 
 		//community
-		'commuity_text' => '加入社区关注必盈动态'
+		'commuity_text' => '加入社区关注必盈动态',
+
+		//join us
+		'join_us_header' => '加入我们',
+		'join_us_header_text' => '共同参与区块链时代的伟大航程',
+
+		'join_us_card_1_header' => '发币',
+		'join_us_card_1_header_picture_1' => '杭州',
+		'join_us_card_1_header_picture_2' => '3人',
+
+		'join_us_card_1_body_header' =>	 '工作部门',
+		'join_us_card_1_body_text' =>	'部门名称',
+
+		'join_us_card_1_decription_header' =>	 '要求',
+		'join_us_card_1_decription_text_1' =>	 '1.会基本的电脑操作，熟练使用excel，制作报表。',
+		'join_us_card_1_decription_text_2' =>	 '2.工作细心谨慎，能承受较大的工作压力，适应三班倒工作模式。',
+
+		'join_us_card_2_header' => '代投',
+		'join_us_card_2_header_picture_1' =>	 '杭州',
+		'join_us_card_2_header_picture_2' =>	 '3人',
+		'join_us_card_2_header_picture_3' =>	 '10%代投费',
+
+		'join_us_card_2_body_header' =>	 '工作部门',
+		'join_us_card_2_body_text' =>	 '部门名称',
+
+		'join_us_card_2_decription_header' =>	 '要求',
+		'join_us_card_2_decription_text_1' =>	 '1.有过代投经验，掌握大量的币圈人脉关系。',
+		'join_us_card_2_decription_text_2' =>	 '2.能够发展自己的下线。',
+
+
+
+		'join_us_card_3_header' => '用户运营',
+		'join_us_card_3_header_picture_1' =>	 '杭州',
+		'join_us_card_3_header_picture_2' =>	 '2人',
+		'join_us_card_3_header_picture_3' =>	 '面议',
+
+		'join_us_card_3_body_header' =>	 '工作部门',
+		'join_us_card_3_body_text' =>	 '部门名称',
+
+		'join_us_card_3_decription_header' =>	 '要求',
+		'join_us_card_3_decription_text_1' =>	 '1.通过与内容运营和活动策划的联动，将用户群体引导到telegram和微信群组。',
+		'join_us_card_3_decription_text_2' =>	 '2.对群组里的用户进行日常维护。',
+
+		'join_us_card_4_header' => '内容运营',
+		'join_us_card_4_header_picture_1' =>	 '杭州',
+		'join_us_card_4_header_picture_2' =>	 '2人',
+		'join_us_card_4_header_picture_3' =>	 '面议',
+
+		'join_us_card_4_body_header' =>	 '工作部门',
+		'join_us_card_4_body_text' =>	 '部门名称',
+
+		'join_us_card_4_decription_header' =>	 '要求',
+		'join_us_card_4_decription_text_1' =>	 '国外：1.良好的规划能力，独立负责Facebook/Twitter/Instagram日常内容更新，发布，互动等。',
+		'join_us_card_4_decription_text_2' =>	 '国内：1.深谙微博，公众号的玩法，对日常内容的输出，增加精准粉丝。',
+
+		'join_us_card_button' => '申请职位'
+
 	];

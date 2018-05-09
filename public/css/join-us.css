@@ -31,3 +31,8 @@
 	border: none;
 	background-color: #fbfbff;
 }
+
+.btn-news{
+    margin-right: 80px;
+    background-color: #5b72c6 !important;
+}

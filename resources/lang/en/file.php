@@ -20,5 +20,5 @@
 		'home_section_picture3' => '必盈模式',
 
 		'home_section_six' => '加入必盈社区',
-		'wechat' => '微信公众号',
+		'wechat' => 'WeChat',
 	];
