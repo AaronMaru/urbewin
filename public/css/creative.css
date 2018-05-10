@@ -5,7 +5,8 @@ html {
 }
 
 body {
-    font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
+    /*font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;*/
+    font-family: PingFangSC-Light, sans-serif;
 }
 
 hr {
@@ -35,11 +36,12 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    font-family: PingFangSC-Light, sans-serif;
 }
 
 .bg-primary {
     background-color: #ffffff !important;
+    padding-top: 100px;
 }
 
 .bg-dark {
@@ -69,6 +71,7 @@ section {
 .section-text {
     color: #8FA0CF;
     font-size: 28px;
+    margin-bottom: 100px;
 }
 
 .section-text-mini {
@@ -106,7 +109,7 @@ img::-moz-selection {
 #mainNav {
     border-bottom: 1px solid rgba(33, 37, 41, 0.1);
     background-color: #fff;
-    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    font-family: PingFangSC-Light, sans-serif;
     -webkit-transition: all 0.2s;
     -moz-transition: all 0.2s;
     transition: all 0.2s;
@@ -116,7 +119,7 @@ img::-moz-selection {
     font-weight: 700;
     text-transform: uppercase;
     color: #5b72c6;
-    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    font-family: PingFangSC-Light, sans-serif;
 }
 
 #mainNav .navbar-brand:focus,
@@ -193,15 +196,14 @@ img::-moz-selection {
 }
 
 header.masthead {
-    /*padding-top: 10rem;*/
-    /*padding-bottom: calc(10rem - 56px);*/
-    background-image: url("../img/index/banner.jpg");
-    /*background-position: center center;*/
+    padding-top: 10rem;
+    background: url(../img/index/banner.jpg) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
 }
+
 
 header.masthead hr {
     margin-top: 30px;
@@ -224,8 +226,7 @@ header.masthead p {
 
 @media (min-width: 992px) {
     header.masthead {
-        height: 100vh;
-        min-height: 650px;
+        height: 780px;
         padding-top: 0;
         padding-bottom: 0;
     }
@@ -236,7 +237,7 @@ header.masthead p {
 
 @media (min-width: 1200px) {
     header.masthead h1 {
-        font-size: 3rem;
+        font-size: 5rem;
     }
 }
 
@@ -277,7 +278,7 @@ header.masthead p {
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category,
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
     padding: 0 15px;
-    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    font-family: PingFangSC-Light, sans-serif;
 }
 
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
@@ -320,7 +321,7 @@ header.masthead p {
     text-transform: uppercase;
     border: none;
     border-radius: 300px;
-    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    font-family: PingFangSC-Light, sans-serif;
 }
 
 .btn-xl {
@@ -407,4 +408,9 @@ footer, .card {
 
 .text-bold{
     font-weight: bold;
+}
+
+.img-banner-logo{
+    margin-top: 100px;
+    height: 200px;
 }

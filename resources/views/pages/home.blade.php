@@ -5,8 +5,8 @@
     <div class="container my-auto">
         <div class="row">
             <div class="col-lg-12 mx-auto">
-                <img src="{{ url('img/index/banner_logo.png') }}" class="img-fluid">
-                <h1>{{ trans('file.image_background_title') }}</h1>
+                <img src="{{ url('img/index/banner_logo.png') }}" class="img-fluid img-banner-logo">
+                <h1 class="text-banner-logo">{{ trans('file.image_background_title') }}</h1>
                 <p class="text-faded mb-5">{{ trans('file.image_background_text') }}</p>
                 <img src="{{ url('img/index/pull_down.png') }}" class="section_3_img img-fluid">
             </div>
@@ -18,7 +18,7 @@
         <div class="row">
             <div class="col-lg-8 mx-auto text-center">
                 <h1 class="section-heading text-bold">{{ trans('file.home_section_header') }}</h1>
-                <p class="section-text mb-4">{{ trans('file.home_section_text') }}</p>
+                <p class="section-text">{{ trans('file.home_section_text') }}</p>
             </div>
         </div>
         <div class="row">
