@@ -57,6 +57,9 @@
                             </div>
                         </form>
                     </li> -->
+                    <li class="nav-item">
+                       <a class="nav-link js-scroll-trigger">|</a>
+                    </li>
                    <li class="nav-item">
                        <form action="language" method="post" id="language">
                            <select name="locale" id="locale" class="form-control">

@@ -54,7 +54,7 @@
                           <a class="dropdown-item" href="#">ENG</a>
                         </div>
                     </li> -->
-                     <li class="nav-item">
+                    <li class="nav-item">
                        <a class="nav-link js-scroll-trigger">|</a>
                     </li>
                    <li class="nav-item">
