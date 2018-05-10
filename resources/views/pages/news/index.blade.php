@@ -11,7 +11,7 @@
 <section class="bg-primary">
     <div class="container">
             <!-- Project One -->
-        @foreach ($news as $new)
+        <!-- @foreach ($news as $new)
             <div class="row">
                 <div class="col-md-4">
                     <a href="#">
@@ -29,8 +29,8 @@
                     <a class="btn btn-primary pull-right btn-news" href="{{ url('/news/1') }}">View Project</a>
                 </div>
             </div>
-
-        @endforeach
+        
+        @endforeach -->
     </div>
 </section>
 <section class="bg-primary">
