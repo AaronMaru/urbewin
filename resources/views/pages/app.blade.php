@@ -8,8 +8,8 @@
                     <img src="{{ url('images/download/picture_1.png') }}" class="img-fluid" height="100px">
                 </div>
                 <div class="col-lg-5 mx-auto section_3_text">
-                    <h2 class="text-faded text-blue mb-5">{{ trans('file.app_section_1_text_1') }}</h2>
-                    <p class="text-faded text-blue mb-5">{{ trans('file.app_section_1_text_2') }}</p>
+                    <h1 class="text-faded section-heading-mini text-center">{{ trans('file.app_section_1_text_1') }}</h1>
+                    <p class="text-faded section-text-mini text-center">{{ trans('file.app_section_1_text_2') }}</p>
                 </div>
             </div>
         </div>
@@ -22,8 +22,8 @@
                     <p class="text-faded text-blue mb-5">{{ trans('file.app_section_2_text_2') }}</p> --}}
                     <div>
                     <img src="{{ url('img/index/download_app.png') }}" class="img-fluid">
-                        <p class="text-faded text-blue mb-5">{{ trans('file.home_section_5_text_3') }}</p>
-                        <a href="#" class="btn btn-join-us">{{ trans('file.home_section_5_text_4') }}</a>
+                        <p class="text-faded text-blue">{{ trans('file.home_section_5_text_3') }}</p>
+                        <a href="#" class="btn">{{ trans('file.home_section_5_text_4') }}</a>
                     </div>
                 </div>
                 <div class="col-lg-5 mx-auto section_3_img">

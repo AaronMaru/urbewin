@@ -17,12 +17,12 @@
     <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
     <!-- Custom styles for this template -->
     <link href="{{ asset('css/creative.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/join-us.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/other.css') }}" rel="stylesheet">
 </head>
 
 <body id="page-top">
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top navbar-shrink" id="mainNav">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top navbar-shrink menu" id="mainNav">
         <div class="container">
             <img src="{{ url('images/new_logo/blue.png') }}" width="50" height="30px" id="logo">
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -73,25 +73,26 @@
     @yield('content')
     <section class="section_6">
         <div class="container my-auto">
+
             <div class="row">
-                <div class="col-lg-3"></div>
-                <div class="col-lg-1 mx-auto text-center">
+                <div class="col-lg-2"></div>
+                <div class="col-lg-2 mx-auto text-center">
                     <img src="{{ url('img/index/WeChat.jpg') }}" class="img-fluid" height="100px">
                     <p class="text-faded text-blue mb-5">{{ trans('file.wechat') }}</p>
                 </div>
-                <div class="col-lg-1 mx-auto text-center">
+                <div class="col-lg-2 mx-auto text-center">
                     <img src="{{ url('img/index/fb.jpg') }}" class="img-fluid" height="100px">
                     <p class="text-faded text-blue mb-5">Facebook</p>
                 </div>
-                <div class="col-lg-1 mx-auto text-center">
+                <div class="col-lg-2 mx-auto text-center">
                     <img src="{{ url('img/index/Twitter.jpg') }}" class="img-fluid" height="100px">
                     <p class="text-faded text-blue mb-5">Twitter</p>
                 </div>
-                <div class="col-lg-1 mx-auto text-center">
+                <div class="col-lg-2 mx-auto text-center">
                     <img src="{{ url('img/index/telegram.jpg') }}" class="img-fluid" height="100px">
                     <p class="text-faded text-blue mb-5">Telegram</p>
                 </div>
-                <div class="col-lg-3"></div>
+                <div class="col-lg-2"></div>
             </div>
         </div>
     </section>

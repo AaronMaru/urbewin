@@ -5,15 +5,15 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 mx-auto text-center join-us">
-                    <h2 class="section-heading text-blue">{{ trans('file.join_us_header') }}</h2>
-                    <p class="text-blue mb-4">{{ trans('file.join_us_header_text') }}</p>
+                    <h2 class="section-heading-mini">{{ trans('file.join_us_header') }}</h2>
+                    <p class="section-text-mini mb-4">{{ trans('file.join_us_header_text') }}</p>
                 </div>
             </div>
             <div class="row justify-content-around join-us-card">
                 <div class="col-lg-4">
                     <div class="card" style="width: 18rem; height: 32rem">
                         <div class="card-body  text-center">
-                            <div class="card-title mx-auto'">{{ trans('file.join_us_card_1_header') }}</div>
+                            <div class="card-title mx-auto section-text-mini">{{ trans('file.join_us_card_1_header') }}</div>
                             <div class="row">
                                 <div class="col-lg-4">
                                     <img class="img-join-us" src="{{ url('images/join_us/city.png') }}" alt="Card image cap">
@@ -45,7 +45,7 @@
                 <div class="col-lg-4">
                     <div class="card" style="width: 18rem; height: 32rem">
                         <div class="card-body  text-center">
-                            <div class="card-title mx-auto'">{{ trans('file.join_us_card_2_header') }}</div>
+                            <div class="card-title mx-auto section-text-mini">{{ trans('file.join_us_card_2_header') }}</div>
                             <div class="row">
                                 <div class="col-lg-4">
                                     <img class="img-join-us" src="{{ url('images/join_us/city.png') }}" alt="Card image cap">
@@ -79,7 +79,7 @@
                 <div class="col-lg-4">
                     <div class="card" style="width: 18rem; height: 32rem">
                         <div class="card-body  text-center">
-                            <div class="card-title mx-auto'">{{ trans('file.join_us_card_3_header') }}</div>
+                            <div class="card-title mx-auto section-text-mini">{{ trans('file.join_us_card_3_header') }}</div>
                             <div class="row">
                                 <div class="col-lg-4">
                                     <img class="img-join-us" src="{{ url('images/join_us/city.png') }}" alt="Card image cap">
@@ -113,7 +113,7 @@
                 <div class="col-lg-4">
                     <div class="card" style="width: 18rem; height: 32rem">
                         <div class="card-body  text-center">
-                            <div class="card-title mx-auto'">{{ trans('file.join_us_card_4_header') }}</div>
+                            <div class="card-title mx-auto section-text-mini">{{ trans('file.join_us_card_4_header') }}</div>
                             <div class="row">
                                 <div class="col-lg-4">
                                     <img class="img-join-us" src="{{ url('images/join_us/city.png') }}" alt="Card image cap">
@@ -148,7 +148,7 @@
                     <div class="col-lg-4">
                         <div class="card" style="width: 18rem; height: 32rem">
                             <div class="card-body  text-center">
-                                <div class="card-title mx-auto'">{{ trans('file.join_us_card_5_header') }}</div>
+                                <div class="card-title mx-auto section-text-mini">{{ trans('file.join_us_card_5_header') }}</div>
                                 <div class="row">
                                     <div class="col-lg-4">
                                         <img class="img-join-us" src="{{ url('images/join_us/city.png') }}" alt="Card image cap">

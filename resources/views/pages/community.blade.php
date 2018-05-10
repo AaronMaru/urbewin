@@ -4,8 +4,8 @@
     <section class="bg-primary">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 mx-auto text-center join-us">
-                    <h2 class="section-heading text-blue">{{  trans('file.commuity_text') }}</h2>
+                <div class="col-lg-12 mx-auto text-center join-us">
+                    <h2 class="section-heading-mini">{{  trans('file.commuity_text') }}</h2>
                 </div>
             </div>
         </div>

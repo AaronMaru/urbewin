@@ -16,14 +16,15 @@
     <!-- Plugin CSS -->
     <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
     <!-- Custom styles for this template -->
-    <link href="css/creative.css" rel="stylesheet">
+    <link href="{{ asset('css/creative.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/home.css') }}" rel="stylesheet">
 </head>
 
 <body id="page-top">
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top menu" id="mainNav">
         <div class="container">
-            <img src="{{ url('images/new_logo/white.png') }}" width="50" height="30px" id="logo">
+            <img src="{{ url('images/new_logo/white.png') }}" width="50" height="50px" id="logo" class="img-fluid">
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -53,9 +54,12 @@
                           <a class="dropdown-item" href="#">ENG</a>
                         </div>
                     </li> -->
+                     <li class="nav-item">
+                       <a class="nav-link js-scroll-trigger">|</a>
+                    </li>
                    <li class="nav-item">
                        <form action="language" method="post" id="language">
-                           <select name="locale" id="locale" class="form-control">
+                           <select name="locale" id="locale" class="form-control change-language">
                                <option value="zh" {{ App::getLocale()=='zh' ? ' selected' : '' }}>中文</option>
                                <option value="en" {{ App::getLocale()=='en' ? ' selected' : '' }}>ENG</option>
                            </select>
@@ -70,29 +74,29 @@
     <section class="section_6">
         <div class="container my-auto">
             <div class="row">
-                <div class="col-lg-5 mx-auto text-center">
-                    <p class="text-faded text-blue mb-5">{{ trans('file.home_section_six') }}</p>
+                <div class="col-lg-12 mx-auto text-center">
+                    <p class="text-faded section-heading mb-5">{{ trans('file.home_section_six') }}</p>
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-3"></div>
-                <div class="col-lg-1 mx-auto text-center">
+                <div class="col-lg-2"></div>
+                <div class="col-lg-2 mx-auto text-center">
                     <img src="{{ url('img/index/WeChat.jpg') }}" class="img-fluid" height="100px">
                     <p class="text-faded text-blue mb-5">{{ trans('file.wechat') }}</p>
                 </div>
-                <div class="col-lg-1 mx-auto text-center">
+                <div class="col-lg-2 mx-auto text-center">
                     <img src="{{ url('img/index/fb.jpg') }}" class="img-fluid" height="100px">
                     <p class="text-faded text-blue mb-5">Facebook</p>
                 </div>
-                <div class="col-lg-1 mx-auto text-center">
+                <div class="col-lg-2 mx-auto text-center">
                     <img src="{{ url('img/index/Twitter.jpg') }}" class="img-fluid" height="100px">
                     <p class="text-faded text-blue mb-5">Twitter</p>
                 </div>
-                <div class="col-lg-1 mx-auto text-center">
+                <div class="col-lg-2 mx-auto text-center">
                     <img src="{{ url('img/index/telegram.jpg') }}" class="img-fluid" height="100px">
                     <p class="text-faded text-blue mb-5">Telegram</p>
                 </div>
-                <div class="col-lg-3"></div>
+                <div class="col-lg-2"></div>
             </div>
         </div>
     </section>

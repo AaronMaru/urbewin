@@ -20,36 +20,6 @@
         $('.navbar-collapse').collapse('hide');
     });
 
-    // Activate scrollspy to add active class to navbar items on scroll
-    $('body').scrollspy({
-        target: '#mainNav',
-        offset: 57
-    });
-
-    // Collapse Navbar
-
-    // Collapse now if page is not at top
-    // navbarCollapse();
-    // Collapse the navbar when page is scrolled
-    // $(window).scroll(navbarCollapse);
-
-    // Scroll reveal calls
-    window.sr = ScrollReveal();
-    sr.reveal('.sr-icons', {
-        duration: 600,
-        scale: 0.3,
-        distance: '0px'
-    }, 200);
-    sr.reveal('.sr-button', {
-        duration: 1000,
-        delay: 200
-    });
-    sr.reveal('.sr-contact', {
-        duration: 600,
-        scale: 0.3,
-        distance: '0px'
-    }, 300);
-
     // Magnific popup calls
     $('.popup-gallery').magnificPopup({
         delegate: 'a',
@@ -70,4 +40,10 @@
         $('#language').submit();
     });
 
+    var links = $('.navbar ul li a');
+    $.each(links, function (key, va) {
+        if (va.href == document.URL) {
+            $(this).addClass('active');
+        }
+    });
 })(jQuery); // End of use strict
