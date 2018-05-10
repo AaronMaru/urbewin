@@ -57,13 +57,13 @@
         </div>
         <div class="row">
             <div class="col-lg-4">
-                <p class="text-blue mb-4 text-center">{{ trans('file.home_section_picture_1') }}</p>
+                <p class="section-text-mini mb-4 text-center">{{ trans('file.home_section_picture_1') }}</p>
             </div>
             <div class="col-lg-4">
-                <p class="text-blue mb-4 text-center">{{ trans('file.home_section_picture_2') }}</p>
+                <p class="section-text-mini mb-4 text-center">{{ trans('file.home_section_picture_2') }}</p>
             </div>
             <div class="col-lg-4">
-                <p class="text-blue mb-4 text-center">{{ trans('file.home_section_picture_3') }}</p>
+                <p class="section-text-mini mb-4 text-center">{{ trans('file.home_section_picture_3') }}</p>
             </div>
         </div>
 </section>
@@ -76,8 +76,8 @@
             </div>
             <div class="col-lg-5 mx-auto section_3_text">
                 <h1 class="section-heading-mini text-center">{{ trans('file.home_section_3_header') }}</h1>
-                <p class="text-faded section-decscription mb-5">{{ trans('file.home_section_3_text_1') }}</p>
-                <p class="text-faded section-decscription mb-5">{{ trans('file.home_section_3_text_2') }}</p>
+                <p class="text-faded section-decscription">{{ trans('file.home_section_3_text_1') }}</p>
+                <p class="text-faded section-decscription">{{ trans('file.home_section_3_text_2') }}</p>
             </div>
             <div class="col-lg-1"></div>
         </div>
