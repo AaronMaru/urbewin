@@ -23,7 +23,7 @@
 <body id="page-top">
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top menu" id="mainNav">
-        <div class="container">
+        <div class="container-fluid">
             <img src="{{ url('images/new_logo/white.png') }}" width="50" height="50px" id="logo" class="img-fluid">
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -45,34 +45,29 @@
                     <li class="nav-item">
                         <a class="nav-link js-scroll-trigger" href="/join-us">{{ trans('file.menu_join_us') }}</a>
                     </li>
-                    <!-- <li class="nav-item dropdown">
+                    <li class="nav-item">
+                       <a class="nav-link js-scroll-trigger">|</a>
+                    </li>
+                    <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           {{ App::getLocale()=='zh' ? '中文' : 'ENG' }}
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                          <a class="dropdown-item" href="#">中文</a>
-                          <a class="dropdown-item" href="#">ENG</a>
+                          <a class="dropdown-item" href="javascript:submitLang('zh')">中文</a>
+                          <a class="dropdown-item" href="javascript:submitLang('en')">ENG</a>
                         </div>
-                    </li> -->
-                    <li class="nav-item">
-                       <a class="nav-link js-scroll-trigger">|</a>
+                        <form action="language" method="post" id="language">
+                            <input type="hidden" name="locale" id="locale"/>
+                            {{ csrf_field() }}
+                        </form>
                     </li>
-                   <li class="nav-item">
-                       <form action="language" method="post" id="language">
-                           <select name="locale" id="locale" class="form-control change-language">
-                               <option value="zh" {{ App::getLocale()=='zh' ? ' selected' : '' }}>中文</option>
-                               <option value="en" {{ App::getLocale()=='en' ? ' selected' : '' }}>ENG</option>
-                           </select>
-                           {{ csrf_field() }}
-                       </form>
-                   </li>
                 </ul>
             </div>
         </div>
     </nav>
     @yield('content')
     <section class="section_6">
-        <div class="container my-auto">
+        <div class="container-fluid my-auto">
             <div class="row">
                 <div class="col-lg-12 mx-auto text-center">
                     <p class="text-faded section-heading mb-5">{{ trans('file.home_section_six') }}</p>
@@ -126,6 +121,12 @@
     <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
     <!-- Custom scripts for this template -->
     <script src="js/creative.js"></script>
+    <script>
+        function submitLang(lang) {
+            $('#locale').val(lang);
+            $('#language').submit();
+        }
+    </script>s
 </body>
 
 </html>

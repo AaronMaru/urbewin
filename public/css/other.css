@@ -1,9 +1,476 @@
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
+    /*font-family: PingFangSC-Light, sans-serif;*/
+}
+
+hr {
+    /*max-width: 100px;*/
+    border-width: 2px;
+    border-color: #5b72c6;
+}
+
+hr.light {
+    border-color: #fff;
+}
+
+a {
+    color: #5b72c6;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+a:hover {
+    color: #5b72c6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: PingFangSC-Light;
+}
+
+.bg-primary {
+    background-color: #ffffff !important;
+    padding-top: 100px;
+}
+
+.bg-dark {
+    background-color: #212529 !important;
+}
+
+.text-faded {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+section {
+    padding: 2rem 0;
+}
+
+.section-heading {
+    margin-top: 0;
+    color: #2F57CB;
+    font-size: 75px;
+    font-family: PingFang-SC-Bold;
+}
+
+.section-heading-mini {
+    margin-top: 100px;
+    color: #2F57CB;
+    font-size: 50px;
+    margin-bottom: 100px;
+    font-family: PingFang-SC-Bold;
+}
+
+.section-text {
+    color: #8FA0CF;
+    font-size: 28px;
+    margin-bottom: 100px;
+    font-family: PingFangSC-Light;
+}
+
+.section-text-mini {
+    color: #8FA0CF;
+    font-size: 20px;
+    font-family: PingFangSC-Light;
+}
+
+.section-description {
+    color: #082B69;
+    font-size: 15px;
+    font-family: PingFangSC-Regular;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.section-3-description {
+    color: #082B69;
+    font-size: 15px;
+    font-family: PingFangSC-Regular;
+}
+
+::-moz-selection {
+    color: #fff;
+    background: #212529;
+    text-shadow: none;
+}
+
+::selection {
+    color: #fff;
+    background: #212529;
+    text-shadow: none;
+}
+
+img::selection {
+    color: #fff;
+    background: transparent;
+}
+
+img::-moz-selection {
+    color: #fff;
+    background: transparent;
+}
+
+#mainNav {
+    border-bottom: 1px solid rgba(33, 37, 41, 0.1);
+    background-color: #fff;
+    font-family: PingFangSC-Regular;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    transition: all 0.2s;
+    font-size: 18px;
+}
+
+#mainNav .navbar-brand {
+    text-transform: uppercase;
+    color: #5b72c6;
+    font-family: PingFangSC-Light, sans-serif;
+}
+
+#mainNav .navbar-brand:focus,
+#mainNav .navbar-brand:hover {
+    color: #5b72c6;
+}
+
+#mainNav .navbar-nav>li.nav-item>a.nav-link,
+#mainNav .navbar-nav>li.nav-item>a.nav-link:focus {
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #212529;
+}
+
+#mainNav .navbar-nav>li.nav-item>a.nav-link:hover,
+#mainNav .navbar-nav>li.nav-item>a.nav-link:focus:hover {
+    color: #5b72c6;
+}
+
+#mainNav .navbar-nav>li.nav-item>a.nav-link.active,
+#mainNav .navbar-nav>li.nav-item>a.nav-link:focus.active {
+    color: #5b72c6 !important;
+    background-color: transparent;
+}
+
+#mainNav .navbar-nav>li.nav-item>a.nav-link.active:hover,
+#mainNav .navbar-nav>li.nav-item>a.nav-link:focus.active:hover {
+    background-color: transparent;
+}
+
+@media (min-width: 992px) {
+    #mainNav {
+        border-color: transparent;
+        background-color: transparent;
+    }
+    #mainNav .navbar-brand {
+        color: rgba(255, 255, 255, 0.7);
+    }
+    #mainNav .navbar-brand:focus,
+    #mainNav .navbar-brand:hover {
+        color: #fff;
+    }
+    #mainNav .navbar-nav>li.nav-item>a.nav-link {
+        padding: 0.5rem 0.6rem;
+    }
+    #mainNav .navbar-nav>li.nav-item>a.nav-link,
+    #mainNav .navbar-nav>li.nav-item>a.nav-link:focus {
+        color: rgba(255, 255, 255, 0.7);
+    }
+    #mainNav .navbar-nav>li.nav-item>a.nav-link:hover,
+    #mainNav .navbar-nav>li.nav-item>a.nav-link:focus:hover {
+        color: #fff;
+    }
+    #mainNav.navbar-shrink {
+        background-color: #fff;
+    }
+    #mainNav.navbar-shrink .navbar-brand {
+        color: #5b72c6;
+    }
+    #mainNav.navbar-shrink .navbar-brand:focus,
+    #mainNav.navbar-shrink .navbar-brand:hover {
+        color: #5b72c6;
+    }
+    #mainNav.navbar-shrink .navbar-nav>li.nav-item>a.nav-link,
+    #mainNav.navbar-shrink .navbar-nav>li.nav-item>a.nav-link:focus {
+        color: #212529;
+    }
+    #mainNav.navbar-shrink .navbar-nav>li.nav-item>a.nav-link:hover,
+    #mainNav.navbar-shrink .navbar-nav>li.nav-item>a.nav-link:focus:hover {
+        color: #5b72c6;
+    }
+}
+
+header.masthead {
+    padding-top: 10rem;
+    background: url(../img/index/banner.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+header.masthead hr {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+header.masthead h1 {
+    font-size: 2rem;
+}
+
+header.masthead p {
+    font-weight: 300;
+}
+
+@media (min-width: 768px) {
+    header.masthead p {
+        font-size: 1.35rem;
+    }
+}
+
+@media (min-width: 992px) {
+    header.masthead {
+        height: 780px;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    header.masthead h1 {
+        font-size: 3rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    header.masthead h1 {
+        font-size: 4.5rem;
+    }
+}
+
+.service-box {
+    max-width: 400px;
+}
+
+.portfolio-box {
+    position: relative;
+    display: block;
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.portfolio-box .portfolio-box-caption {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    opacity: 0;
+    color: #fff;
+    background: rgba(240, 95, 64, 0.9);
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category,
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
+    padding: 0 15px;
+    font-family: PingFangSC-Light, sans-serif;
+}
+
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
+    font-size: 18px;
+}
+
+.portfolio-box:hover .portfolio-box-caption {
+    opacity: 1;
+}
+
+.portfolio-box:focus {
+    outline: none;
+}
+
+@media (min-width: 768px) {
+    .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
+        font-size: 16px;
+    }
+    .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
+        font-size: 22px;
+    }
+
+    .banner {
+        margin-top: 20px;
+    }
+}
+
+.text-primary {
+    color: #F05F40 !important;
+}
+
+.btn {
+    font-weight: 700;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 300px;
+    font-family: PingFangSC-Light, sans-serif;
+}
+
+.btn-xl {
+    padding: 1rem 2rem;
+}
+
+.btn-primary {
+    background-color: #F05F40;
+    border-color: #F05F40;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+    color: #fff;
+    background-color: #ee4b28 !important;
+}
+
+.btn-primary:active,
+.btn-primary:focus {
+    box-shadow: 0 0 0 0.2rem rgba(240, 95, 64, 0.5) !important;
+}
+
+.text-blue {
+    color: #5b72c6 !important;
+}
+
+.text-white {
+    color: #fff !important;
+}
+
+.section_3 {
+    background-image: url("../img/index/uwn_gsxy_bg.png");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.section_3_img {
+    margin: 25px;
+}
+
+.section_1_text {
+    padding: 0 50px;
+    padding: 0 50px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.section_3_text {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.section_5 {
+    background-image: url("../img/index/download_bg.png");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.footer-text {
+    margin-left: 15px;
+}
+
+.footer-left {
+    margin: 5px;
+}
+
+.footer-right {
+    margin: 10px;
+}
+
+.footer-right .lang {
+    margin: 5px;
+}
+
+footer, .card {
+    font-size: 0.8em;
+}
+
+.btn {
+    background-color: #2F57CB !important;
+    color: #fff !important;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.text-bold{
+    font-weight: bold;
+}
+
+.img-banner-logo{
+    margin-top: 100px;
+    height: 200px;
+}
+
+
+
+/*font-face*/
+
+@font-face{
+    font-family: 'PingFangSC-Light';
+    src: url('/fonts/PingFangLight.tff');
+    src: url('/font/PingFangLight.eof?#font-spider') format('embedded-opentype'),
+        url('../font/PingFang-SC-Light.ttf') format('truetype'),
+        url('/fonts/PingFangLight.svg') format('svg');
+}
+
+@font-face{
+    font-family: 'PingFangSC-Regular';
+    src: url('/fonts/PingFang-SC-Regular.tff');
+    src: url('/font/PingFang-SC-Regular.eof?#font-spider') format('embedded-opentype'),
+        url('../font/PingFang-SC-Regular.ttf') format('truetype'),
+        url('/fonts/PingFang-SC-Regular.svg') format('svg');
+}
+
+@font-face{
+    font-family: 'PingFang-SC-Bold';
+    src: url('/fonts/PingFang-SC-Bold.tff');
+    src: url('/font/PingFang-SC-Bold.eof?#font-spider') format('embedded-opentype'),
+        url('../font/PingFang-SC-Bold.ttf') format('truetype'),
+        url('/fonts/PingFang-SC-Bold.svg') format('svg');
+}
+
+.embed-responsive{
+    position: static;
+}
+
 .menu-black {
     color: #212529;
 }
 
 .join-us {
-    margin-top: 70px;
+    margin-bottom: 0;
 }
 
 .join-us-card {
@@ -35,4 +502,62 @@
 .btn-news{
     margin-right: 80px;
     background-color: #5b72c6 !important;
+}
+
+/*app*/
+.app-section-1{
+    margin-top: 100px;
+}
+
+.app-section-1-text{
+    padding-top: 100px;
+}
+
+.app-section-text-mini{
+    color: #8FA0CF;
+    font-size: 28px;
+    font-family: PingFangSC-Light;
+}
+
+
+.app-section-2-text{
+    padding-top: 150px;
+}
+
+
+/*community*/
+.community-section-1{
+    padding: 0;
+    margin-top: 50px;
+}
+
+.community-section-6{
+    padding: 0;
+    margin-bottom: 150px;
+}
+
+
+/*join us*/
+
+.join-us-section-heading-mini {
+    margin-top: 100px;
+    color: #2F57CB;
+    font-size: 50px;
+    font-family: PingFang-SC-Bold;
+}
+
+.join-us-section-2{
+    padding: 0;
+}
+
+.join-us-section-text-mini {
+    color: #2F57CB;
+    font-size: 26px;
+    font-family: PingFangSC-Light;
+}
+
+.join-us-body-card-header {
+    color: #2F57CB;
+    font-size: 18px;
+    font-family: PingFangSC-Light;
 }

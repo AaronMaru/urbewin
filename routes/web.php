@@ -11,14 +11,17 @@
 |
 */
 
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Session;
+
 Route::get('/', function () {
     return view('pages.home');
 });
 
-Route::post('/language', [
-	'Middleware' => 'LanguageSwitcher',
-	'uses' => 'LanguageController@index',
-]);
+// Route::post('/language', [
+//  'Middleware' => 'LanguageSwitcher',
+//  'uses' => 'LanguageController@index',
+// ]);
 
 Route::resource('/news','NewsController');
 
@@ -32,4 +35,10 @@ Route::get('/community', function () {
 
 Route::get('/join-us', function () {
     return view('pages.join_us');
+});
+
+Route::post('/language', function(Request $request) {
+    $lang = $request->get('locale', 'en');
+    Session::put('locale', $lang);
+    return Redirect::back();
 });

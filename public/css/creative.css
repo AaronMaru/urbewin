@@ -5,8 +5,8 @@ html {
 }
 
 body {
-    /*font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;*/
-    font-family: PingFangSC-Light, sans-serif;
+    font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
+    /*font-family: PingFangSC-Light, sans-serif;*/
 }
 
 hr {
@@ -36,7 +36,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: PingFangSC-Light, sans-serif;
+    font-family: PingFangSC-Light;
 }
 
 .bg-primary {
@@ -59,30 +59,43 @@ section {
 .section-heading {
     margin-top: 0;
     color: #2F57CB;
-    font-size: 80px;
+    font-size: 70px;
+    font-family: PingFang-SC-Bold;
 }
 
 .section-heading-mini {
-    margin-top: 0;
+    margin-top: 100px;
     color: #2F57CB;
-    font-size: 50px;
+    font-size: 40px;
     margin-bottom: 100px;
+    font-family: PingFang-SC-Bold;
 }
 
 .section-text {
     color: #8FA0CF;
     font-size: 28px;
     margin-bottom: 100px;
+    font-family: PingFangSC-Light;
 }
 
 .section-text-mini {
     color: #8FA0CF;
     font-size: 20px;
+    font-family: PingFangSC-Light;
 }
 
-.section-decscription {
+.section-description {
     color: #082B69;
-    font-size: 20px;
+    font-size: 15px;
+    font-family: PingFangSC-Regular;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.section-3-description {
+    color: #082B69;
+    font-size: 15px;
+    font-family: PingFangSC-Regular;
 }
 
 ::-moz-selection {
@@ -110,14 +123,14 @@ img::-moz-selection {
 #mainNav {
     border-bottom: 1px solid rgba(33, 37, 41, 0.1);
     background-color: #fff;
-    font-family: PingFangSC-Light, sans-serif;
+    font-family: PingFangSC-Regular;
     -webkit-transition: all 0.2s;
     -moz-transition: all 0.2s;
     transition: all 0.2s;
+    font-size: 18px;
 }
 
 #mainNav .navbar-brand {
-    font-weight: 700;
     text-transform: uppercase;
     color: #5b72c6;
     font-family: PingFangSC-Light, sans-serif;
@@ -131,7 +144,6 @@ img::-moz-selection {
 #mainNav .navbar-nav>li.nav-item>a.nav-link,
 #mainNav .navbar-nav>li.nav-item>a.nav-link:focus {
     font-size: 18px;
-    font-weight: 700;
     text-transform: uppercase;
     color: #212529;
 }
@@ -165,7 +177,7 @@ img::-moz-selection {
         color: #fff;
     }
     #mainNav .navbar-nav>li.nav-item>a.nav-link {
-        padding: 0.5rem 1rem;
+        padding: 0.5rem 0.6rem;
     }
     #mainNav .navbar-nav>li.nav-item>a.nav-link,
     #mainNav .navbar-nav>li.nav-item>a.nav-link:focus {
@@ -221,7 +233,7 @@ header.masthead p {
 
 @media (min-width: 768px) {
     header.masthead p {
-        font-size: 1.15rem;
+        font-size: 1.35rem;
     }
 }
 
@@ -238,7 +250,7 @@ header.masthead p {
 
 @media (min-width: 1200px) {
     header.masthead h1 {
-        font-size: 5rem;
+        font-size: 4.5rem;
     }
 }
 
@@ -364,11 +376,18 @@ header.masthead p {
 
 .section_3_img {
     margin: 25px;
-    padding: 50px;
+}
+
+.section_1_text {
+    padding: 0 50px;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 .section_3_text {
-    padding: 50px;
+    padding: 0 50px;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 .section_5 {
@@ -413,4 +432,36 @@ footer, .card {
 .img-banner-logo{
     margin-top: 100px;
     height: 200px;
+}
+
+
+
+/*font-face*/
+
+@font-face{
+    font-family: 'PingFangSC-Light';
+    src: url('/fonts/PingFangLight.tff');
+    src: url('/font/PingFangLight.eof?#font-spider') format('embedded-opentype'),
+        url('../font/PingFang-SC-Light.ttf') format('truetype'),
+        url('/fonts/PingFangLight.svg') format('svg');
+}
+
+@font-face{
+    font-family: 'PingFangSC-Regular';
+    src: url('/fonts/PingFang-SC-Regular.tff');
+    src: url('/font/PingFang-SC-Regular.eof?#font-spider') format('embedded-opentype'),
+        url('../font/PingFang-SC-Regular.ttf') format('truetype'),
+        url('/fonts/PingFang-SC-Regular.svg') format('svg');
+}
+
+@font-face{
+    font-family: 'PingFang-SC-Bold';
+    src: url('/fonts/PingFang-SC-Bold.tff');
+    src: url('/font/PingFang-SC-Bold.eof?#font-spider') format('embedded-opentype'),
+        url('../font/PingFang-SC-Bold.ttf') format('truetype'),
+        url('/fonts/PingFang-SC-Bold.svg') format('svg');
+}
+
+.embed-responsive{
+    position: static;
 }

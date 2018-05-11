@@ -1,9 +1,11 @@
 .img-line{
-    width: 80%;
-    padding-bottom: 30px;
+    width: 6px;
+    height: 80px;
+    margin: 0;
 }
 
 .menu-line{
     font-size: 20px;
     font-weight: bold;
 }
+

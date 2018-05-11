@@ -16,14 +16,13 @@
     <!-- Plugin CSS -->
     <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
     <!-- Custom styles for this template -->
-    <link href="{{ asset('css/creative.css') }}" rel="stylesheet">
     <link href="{{ asset('css/other.css') }}" rel="stylesheet">
 </head>
 
 <body id="page-top">
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top navbar-shrink menu" id="mainNav">
-        <div class="container">
+        <div class="container-fluid">
             <img src="{{ url('images/new_logo/blue.png') }}" width="50" height="30px" id="logo">
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -45,30 +44,22 @@
                     <li class="nav-item">
                         <a class="nav-link js-scroll-trigger" href="/join-us">{{ trans('file.menu_join_us') }}</a>
                     </li>
-                    <!-- <li class="nav-item dropdown">
-                        <form action="language" method="post" id="language">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                              {{ App::getLocale()=='zh' ? '中文' : 'ENG' }}
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown" name="locale" id="locale">
-                                <a class="dropdown-item" href="#" id="zh">中文</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#" id="eng">ENG</a>
-                            </div>
-                        </form>
-                    </li> -->
                     <li class="nav-item">
                        <a class="nav-link js-scroll-trigger">|</a>
                     </li>
-                   <li class="nav-item">
-                       <form action="language" method="post" id="language">
-                           <select name="locale" id="locale" class="form-control">
-                               <option value="zh" {{ App::getLocale()=='zh' ? ' selected' : '' }}>中文</option>
-                               <option value="en" {{ App::getLocale()=='en' ? ' selected' : '' }}>ENG</option>
-                           </select>
-                           {{ csrf_field() }}
-                       </form>
-                   </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          {{ App::getLocale()=='zh' ? '中文' : 'ENG' }}
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                          <a class="dropdown-item" href="javascript:submitLang('zh')">中文</a>
+                          <a class="dropdown-item" href="javascript:submitLang('en')">ENG</a>
+                        </div>
+                        <form action="language" method="post" id="language">
+                            <input type="hidden" name="locale" id="locale"/>
+                            {{ csrf_field() }}
+                        </form>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -125,6 +116,12 @@
     <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
     <!-- Custom scripts for this template -->
     <script src="js/creative1.js"></script>
+    <script>
+        function submitLang(lang) {
+            $('#locale').val(lang);
+            $('#language').submit();
+        }
+    </script>
 </body>
 
 </html>
