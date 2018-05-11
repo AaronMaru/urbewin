@@ -58,15 +58,15 @@
                             <div class="row">
                                 <div class="col-lg-4">
                                     <img class="img-join-us" src="{{ url('images/join_us/city.png') }}" alt="Card image cap">
-                                    <p class="card-text">{{ trans('file.join_us_card_2_header_picture_1') }}</p>
+                                    <p class="card-text join-us-body-card-header">{{ trans('file.join_us_card_2_header_picture_1') }}</p>
                                 </div>
                                 <div class="col-lg-4">
                                     <img class="img-join-us" src="{{ url('images/join_us/people.png') }}" alt="Card image cap">
-                                    <p class="card-text">{{ trans('file.join_us_card_2_header_picture_2') }}</p>
+                                    <p class="card-text join-us-body-card-header">{{ trans('file.join_us_card_2_header_picture_2') }}</p>
                                 </div>
                                 <div class="col-lg-4">
                                     <img class="img-join-us" src="{{ url('images/join_us/salary.png') }}" alt="Card image cap">
-                                    <p class="card-text">{{ trans('file.join_us_card_2_header_picture_3') }}</p>
+                                    <p class="card-text join-us-body-card-header">{{ trans('file.join_us_card_2_header_picture_3') }}</p>
                                 </div>
                             </div>
                             <hr>
@@ -101,15 +101,15 @@
                             <div class="row">
                                 <div class="col-lg-4">
                                     <img class="img-join-us" src="{{ url('images/join_us/city.png') }}" alt="Card image cap">
-                                    <p class="card-text">{{ trans('file.join_us_card_3_header_picture_1') }}</p>
+                                    <p class="card-text join-us-body-card-header">{{ trans('file.join_us_card_3_header_picture_1') }}</p>
                                 </div>
                                 <div class="col-lg-4">
                                     <img class="img-join-us" src="{{ url('images/join_us/people.png') }}" alt="Card image cap">
-                                    <p class="card-text">{{ trans('file.join_us_card_3_header_picture_2') }}</p>
+                                    <p class="card-text join-us-body-card-header">{{ trans('file.join_us_card_3_header_picture_2') }}</p>
                                 </div>
                                 <div class="col-lg-4">
                                     <img class="img-join-us" src="{{ url('images/join_us/salary.png') }}" alt="Card image cap">
-                                    <p class="card-text">{{ trans('file.join_us_card_3_header_picture_3') }}</p>
+                                    <p class="card-text join-us-body-card-header">{{ trans('file.join_us_card_3_header_picture_3') }}</p>
                                 </div>
                             </div>
                             <hr>
@@ -138,15 +138,15 @@
                             <div class="row">
                                 <div class="col-lg-4">
                                     <img class="img-join-us" src="{{ url('images/join_us/city.png') }}" alt="Card image cap">
-                                    <p class="card-text">{{ trans('file.join_us_card_4_header_picture_1') }}</p>
+                                    <p class="card-text join-us-body-card-header">{{ trans('file.join_us_card_4_header_picture_1') }}</p>
                                 </div>
                                 <div class="col-lg-4">
                                     <img class="img-join-us" src="{{ url('images/join_us/people.png') }}" alt="Card image cap">
-                                    <p class="card-text">{{ trans('file.join_us_card_4_header_picture_2') }}</p>
+                                    <p class="card-text join-us-body-card-header">{{ trans('file.join_us_card_4_header_picture_2') }}</p>
                                 </div>
                                 <div class="col-lg-4">
                                     <img class="img-join-us" src="{{ url('images/join_us/salary.png') }}" alt="Card image cap">
-                                    <p class="card-text">{{ trans('file.join_us_card_4_header_picture_3') }}</p>
+                                    <p class="card-text join-us-body-card-header">{{ trans('file.join_us_card_4_header_picture_3') }}</p>
                                 </div>
                             </div>
                             <hr>
@@ -182,15 +182,15 @@
                             <div class="row">
                                 <div class="col-lg-4">
                                     <img class="img-join-us" src="{{ url('images/join_us/city.png') }}" alt="Card image cap">
-                                    <p class="card-text">{{ trans('file.join_us_card_5_header_picture_1') }}</p>
+                                    <p class="card-text join-us-body-card-header">{{ trans('file.join_us_card_5_header_picture_1') }}</p>
                                 </div>
                                 <div class="col-lg-4">
                                     <img class="img-join-us" src="{{ url('images/join_us/people.png') }}" alt="Card image cap">
-                                    <p class="card-text">{{ trans('file.join_us_card_5_header_picture_2') }}</p>
+                                    <p class="card-text join-us-body-card-header">{{ trans('file.join_us_card_5_header_picture_2') }}</p>
                                 </div>
                                 <div class="col-lg-4">
                                     <img class="img-join-us" src="{{ url('images/join_us/salary.png') }}" alt="Card image cap">
-                                    <p class="card-text">{{ trans('file.join_us_card_5_header_picture_3') }}</p>
+                                    <p class="card-text join-us-body-card-header">{{ trans('file.join_us_card_5_header_picture_3') }}</p>
                                 </div>
                             </div>
                             <hr>

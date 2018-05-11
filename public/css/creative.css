@@ -465,3 +465,8 @@ footer, .card {
 .embed-responsive{
     position: static;
 }
+
+.footer-text{
+    color: #5b72c6;
+    margin-top: 15px;
+}

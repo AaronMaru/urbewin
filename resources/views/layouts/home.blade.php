@@ -97,18 +97,24 @@
     </section>
     <footer>
         <div class="container">
-            <div class="pull-left">
-                <div class="row">
-                    <img src="{{ url('images/navigation_bar_and_bottom/buttom_logo.png') }}" width="50px" height="25spx">
-                    <p class="text-center footer-left">© U are beWiN Team. 2018</p>
+            <div class="row">
+                <div class="col-lg-1"></div>
+                <div class="col-lg-10">
+                    <div class="pull-left">
+                        <div class="row">
+                            <img src="{{ url('images/new_logo/blue.png') }}" width="25px" height="40px">
+                            <p class="text-center footer-left footer-text">© U are beWiN Team. 2018</p>
+                        </div>
+                    </div>
+                    <div class="pull-right">
+                        <div class="row footer-right">
+                            <a href="javascript:submitLang('zh')" class="lang">中文</a>
+                            <p class="lang">|</p>
+                            <a href="javascript:submitLang('en')" class="lang">ENG</a>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="pull-right">
-                <div class="row footer-right">
-                    <a href="" class="lang">中文</a>
-                    <p class="lang">|</p>
-                    <a href="" class="lang">ENG</a>
-                </div>
+                <div class="col-lg-1"></div>
             </div>
         </div>
     </footer>
@@ -126,7 +132,7 @@
             $('#locale').val(lang);
             $('#language').submit();
         }
-    </script>s
+    </script>
 </body>
 
 </html>

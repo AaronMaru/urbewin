@@ -558,6 +558,11 @@ footer, .card {
 
 .join-us-body-card-header {
     color: #2F57CB;
-    font-size: 18px;
+    font-size: 14px;
     font-family: PingFangSC-Light;
+}
+
+.footer-text{
+    color: #5b72c6;
+    margin-top: 15px;
 }
