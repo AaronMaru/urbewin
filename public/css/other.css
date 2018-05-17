@@ -5,7 +5,7 @@ html {
 }
 
 body {
-    font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
+    font-family: DIN-Regular, sans-serif;
     /*font-family: PingFangSC-Light, sans-serif;*/
 }
 
@@ -59,7 +59,7 @@ section {
 .section-heading {
     margin-top: 0;
     color: #2F57CB;
-    font-size: 75px;
+    font-size: 70px;
     font-family: PingFang-SC-Bold;
 }
 
@@ -124,6 +124,16 @@ img::-moz-selection {
     border-bottom: 1px solid rgba(33, 37, 41, 0.1);
     background-color: #fff;
     font-family: PingFangSC-Regular;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    transition: all 0.2s;
+    font-size: 18px;
+}
+
+#mainNav-eng{
+    border-bottom: 1px solid rgba(33, 37, 41, 0.1);
+    background-color: #fff;
+    font-family: DIN-Regular;
     -webkit-transition: all 0.2s;
     -moz-transition: all 0.2s;
     transition: all 0.2s;
@@ -209,7 +219,7 @@ img::-moz-selection {
 
 header.masthead {
     padding-top: 10rem;
-    background: url(../img/index/banner.jpg) no-repeat center center fixed; 
+    background: url(../img/index/banner.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -478,8 +488,9 @@ footer, .card {
 }
 
 .btn-join-us {
-    background-color: #5b72c6 !important;
+    background-color: #2F57CB !important;
     color: #fff !important;
+    margin-bottom: 20px;
 }
 
 .card {
@@ -487,11 +498,15 @@ footer, .card {
 }
 
 .card-text-header {
-    color: #5b72c6;
+    color: #2F57CB;
+    font-family: PingFangSC-Light;
+    font-size: 20px;
 }
 
-.card-text-requirement {
-    font-size: 0.7em;
+.card-text {
+    color: #333333;
+    font-family: PingFangSC-Regular;
+    font-size: 15px;
 }
 
 .card-footer {
@@ -552,7 +567,7 @@ footer, .card {
 
 .join-us-section-text-mini {
     color: #2F57CB;
-    font-size: 26px;
+    font-size: 18px;
     font-family: PingFangSC-Light;
 }
 
@@ -565,4 +580,16 @@ footer, .card {
 .footer-text{
     color: #5b72c6;
     margin-top: 15px;
+}
+
+.btn {
+    text-transform: none;
+}
+
+@font-face{
+    font-family: 'DIN-Regular';
+    src: url('/fonts/DIN-Regular.tff');
+    src: url('/font/DIN-Regular.eof?#font-spider') format('embedded-opentype'),
+        url('../font/DIN-Regular.ttf') format('truetype'),
+        url('/fonts/DIN-Regular.svg') format('svg');
 }

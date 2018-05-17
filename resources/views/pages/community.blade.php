@@ -67,9 +67,11 @@
     <section class="community-section-1">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 mx-auto text-center commuity_text">
-                    <h2 class="section-heading-mini community-heading">{{  trans('file.commuity_text') }}</h2>
+                <div class="col-lg-1"></div>
+                <div class="col-lg-10 mx-auto text-center commuity_text">
+                    <h2 class="section-heading-mini community-heading">{{  trans('file.commuity_header') }}</h2>
                 </div>
+                <div class="col-lg-1"></div>
             </div>
         </div>
     </section>

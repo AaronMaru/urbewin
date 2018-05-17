@@ -66,4 +66,5 @@
    if ($(window).width() < 960) {
        $("#logo").attr('src', 'images/new_logo/blue.png');
     }
+
 })(jQuery); // End of use strict

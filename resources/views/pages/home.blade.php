@@ -17,8 +17,8 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-8 mx-auto text-center">
-                <h1 class="section-heading text-bold">{{ trans('file.home_section_header') }}</h1>
-                <p class="section-text">{{ trans('file.home_section_text') }}</p>
+                <h1 class="section-heading text-bold">{{ trans('file.home_section_1_header') }}</h1>
+                <p class="section-text">{{ trans('file.home_section_1_text') }}</p>
             </div>
         </div>
         <div class="row">
@@ -27,15 +27,15 @@
             <div class="col-lg-5 mx-auto section_1_text">
                 <div class="row">
                     <img src="{{ url('img/index/head_of_text.png') }}" class="img-line img-fluid col-lg-1">
-                    <p class="mb-4 col-lg-11  section-description">{{ trans('file.home_section_contain_1') }}</p>
+                    <p class="mb-4 col-lg-11  section-description">{{ trans('file.home_section_1_contain_1') }}</p>
                 </div>
                 <div class="row">
                     <div class="col-lg-1"></div>
-                    <p class="col-lg-11 mb-4  section-description">{{ trans('file.home_section_contain_2') }}</p>
+                    <p class="col-lg-11 mb-4  section-description">{{ trans('file.home_section_1_contain_2') }}</p>
                 </div>
                 <div class="row">
                     <div class="col-lg-1"></div>
-                    <p class="col-lg-11 mb-4  section-description">{{ trans('file.home_section_contain_3') }}</p>
+                    <p class="col-lg-11 mb-4  section-description">{{ trans('file.home_section_1_contain_3') }}</p>
                 </div>
             </div>
             <div class="col-lg-5 mx-auto">
@@ -57,13 +57,13 @@
         </div>
         <div class="row">
             <div class="col-lg-4">
-                <p class="section-text-mini mb-4 text-center">{{ trans('file.home_section_picture_1') }}</p>
+                <p class="section-text-mini mb-4 text-center">{{ trans('file.home_section_2_text_1') }}</p>
             </div>
             <div class="col-lg-4">
-                <p class="section-text-mini mb-4 text-center">{{ trans('file.home_section_picture_2') }}</p>
+                <p class="section-text-mini mb-4 text-center">{{ trans('file.home_section_2_text_2') }}</p>
             </div>
             <div class="col-lg-4">
-                <p class="section-text-mini mb-4 text-center">{{ trans('file.home_section_picture_3') }}</p>
+                <p class="section-text-mini mb-4 text-center">{{ trans('file.home_section_2_text_3') }}</p>
             </div>
         </div>
 </section>
