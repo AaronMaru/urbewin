@@ -95,21 +95,18 @@
 <section class="section_4">
     <div class="container my-auto">
         <div class="row">
-            <div class="col-lg-1"></div>
-            <div class="col-lg-5 mx-auto section_3_text">
+            <div class="col-lg-6 mx-auto section_3_text">
                 <div class="row">
-                    <h1 class="section-heading-mini-2 col-lg-12 text-center">{{ trans('file.home_section_4_header') }}</h1>
+                    <h1 class="section-heading-mini-2 col-lg-12 fix-margin">{{ trans('file.home_section_4_header') }}</h1>
                 </div>
-                <div class="row">
-                    <div class="col-lg-1"></div>
+                <div class="row fix-padding">
                     <img src="{{ url('img/index/head_of_text.png') }}" class="img-line img-fluid col-lg-1">
-                    <p class="text-faded section-description mb-5 col-lg-9">{{ trans('file.home_section_4_text_1') }}</p>
+                    <p class="text-faded section-description mb-5 col-lg-10">{{ trans('file.home_section_4_text_1') }}</p>
                     <div class="col-lg-1"></div>
                 </div>
-                <div class="row">
+                <div class="row fix-padding">
                     <div class="col-lg-1"></div>
-                    <div class="col-lg-1"></div>
-                    <p class="text-faded section-description mb-5 col-lg-9">{{ trans('file.home_section_4_text_2') }}</p>
+                    <p class="text-faded section-description mb-5 col-lg-10">{{ trans('file.home_section_4_text_2') }}</p>
                     <div class="col-lg-1"></div>
                 </div>
             </div>
@@ -122,10 +119,10 @@
 </section>
 <section class="section_5">
     <div class="container my-auto">
-        <div class="row">
+        <div class="row fix-no-header-text">
             <div class="col-lg-1"></div>
             <div class="col-lg-5 mx-auto section_3_img">
-                <img src="{{ url('img/index/picture_4.png') }}" class="img-fluid" height="100px">
+                <img src="{{ url('img/index/picture_4.png') }}" class="img-fluid dd" height="100%">
             </div>
             <div class="col-lg-5 mx-auto section_3_text text-center">
                 <div>
@@ -144,4 +141,5 @@
         </div>
     </div>
 </section>
+
 @endsection

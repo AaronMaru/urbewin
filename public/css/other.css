@@ -447,6 +447,7 @@ footer,
 
 
 
+
 /*font-face*/
 
 @font-face {
@@ -521,6 +522,7 @@ footer,
 }
 
 
+
 /*app*/
 
 .app-section-1 {
@@ -544,6 +546,7 @@ footer,
 
 
 
+
 /*community*/
 
 .community-section-1 {
@@ -555,6 +558,7 @@ footer,
     padding: 0;
     margin-bottom: 150px;
 }
+
 
 
 
@@ -622,8 +626,16 @@ footer,
     margin-top: 20px;
 }
 
-.news-show-titlel{
+.news-show-title {
     color: #2F57CB;
     font-size: 50px;
     font-family: PingFang-SC-Bold;
+}
+
+.news-description {
+    margin-top: 70px;
+}
+
+.news-list {
+    margin-bottom: 100px;
 }

@@ -12,7 +12,7 @@
     <div class="container">
             <!-- Project One -->
         @foreach ($news as $new)
-            <div class="row">
+            <div class="row news-list">
                 <div class="col-lg-1"></div>
                 <div class="col-lg-4 col-md-4">
                     <a href="#">
@@ -45,20 +45,12 @@
                             <p class="section-description col-lg-12">{{ str_limit(strip_tags($new->content_eng), 400)  }}</p>
                         </div>
                     @endif
-                    <a class="btn btn-primary pull-right btn-news" href="{{ url('/news/1') }}">{{ trans('file.btn_read_more') }}  <img src="{{ url('images/news_list/read_more&next_page.png') }}" class="img-fluid" height="33px" width="33px"></a>
+                    <a class="btn btn-primary pull-right btn-news" href="{{ url('/news/' . $new->id) }}">{{ trans('file.btn_read_more') }}  <img src="{{ url('images/news_list/read_more&next_page.png') }}" class="img-fluid" height="33px" width="33px"></a>
                 </div>
                 <div class="col-lg-1"></div>
             </div>
 
         @endforeach
-    </div>
-</section>
-<section class="bg-primary">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 mx-auto text-center join-us">
-            </div>
-        </div>
     </div>
 </section>
 @endsection

@@ -23,7 +23,14 @@ Route::get('/', function () {
 //  'uses' => 'LanguageController@index',
 // ]);
 
-Route::resource('/news','NewsController');
+
+Route::group([
+    'middleware' => ['auth']
+], function () {
+    Route::resource('/news','NewsController');
+});
+
+Route::get('/news', 'NewsController@index');
 
 Route::get('/app', function () {
     return view('pages.app');
@@ -42,3 +49,7 @@ Route::post('/language', function(Request $request) {
     Session::put('locale', $lang);
     return Redirect::back();
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
