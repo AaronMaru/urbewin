@@ -31,6 +31,7 @@ Route::group([
 });
 
 Route::get('/news', 'NewsController@index');
+Route::get('/news/{news}', 'NewsController@show');
 
 Route::get('/app', function () {
     return view('pages.app');
