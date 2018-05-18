@@ -19,6 +19,7 @@ class CreateNewsTable extends Migration
             $table->string('title_zh');
             $table->text('content_eng');
             $table->text('content_zh');
+            $table->string('image')->default('default-news.jpg');
             $table->timestamps();
         });
     }

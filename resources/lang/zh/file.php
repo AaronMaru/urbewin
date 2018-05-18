@@ -115,4 +115,6 @@
 
 		'join_us_card_button' => '申请职位',
 
+		// news
+		'btn_read_more' => '阅读详细',
 	];

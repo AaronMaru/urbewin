@@ -36,7 +36,12 @@ class NewsController extends Controller
      */
     public function store(Request $request)
     {
-        News::create($request->all());
+        $data = $request->except(['image']);
+        $file = $request->file('image');
+        $filename = $file->getClientOriginalName();
+        request()->image->move(public_path('images/news'), $filename);
+        $data['image'] = $filename;
+        News::create($data);
         return redirect('news/');
     }
 
@@ -48,7 +53,8 @@ class NewsController extends Controller
      */
     public function show($id)
     {
-        return view('pages.news.show');
+        $data['news'] = News::findorFail($id);
+        return view('pages.news.show', $data);
     }
 
     /**

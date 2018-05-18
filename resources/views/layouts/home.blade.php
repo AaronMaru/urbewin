@@ -69,8 +69,8 @@
     <section class="section_6">
         <div class="container-fluid my-auto">
             <div class="row">
-                <div class="col-lg-12 mx-auto text-center">
-                    <p class="text-faded section-heading mb-5">{{ trans('file.home_section_6_header') }}</p>
+                <div class="col-lg-12 col-12 mx-auto text-center">
+                    <p class="section-heading col-12 mb-5 text-center">{{ trans('file.home_section_6_header') }}</p>
                 </div>
             </div>
             <div class="row">

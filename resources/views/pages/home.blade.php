@@ -5,9 +5,9 @@
     <div class="container my-auto">
         <div class="row">
             <div class="col-lg-12 mx-auto">
-                <img src="{{ url('img/index/banner_logo.png') }}" class="img-fluid img-banner-logo">
+                <img src="{{ url('images/new_logo/blue.png') }}" class="img-fluid img-banner-logo">
                 <h1 class="text-banner-logo">{{ trans('file.image_background_title') }}</h1>
-                <p class="text-faded mb-5">{{ trans('file.image_background_text') }}</p>
+                <p class="mb-5 mini-text-banner-logo">{{ trans('file.image_background_text') }}</p>
                 <img src="{{ url('img/index/pull_down.png') }}" class="section_3_img img-fluid">
             </div>
         </div>
@@ -48,22 +48,22 @@
         </div>
     </div>
 </section>
-<section>
+<section class="section_2">
     <div class="container">
         <div class="row">
             <div class="col-lg-1"></div>
             <img src="{{ url('img/index/picture_1.png') }}" class="img-fluid col-lg-10">
             <div class="col-lg-1"></div>
         </div>
-        <div class="row">
-            <div class="col-lg-4">
-                <p class="section-text-mini mb-4 text-center">{{ trans('file.home_section_2_text_1') }}</p>
+        <div class="row section_2_row_2">
+            <div class="col-lg-4 col-sm-4 col-4">
+                <p class="section-text-mini mb-4 text-center first-text">{{ trans('file.home_section_2_text_1') }}</p>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 col-sm-4 col-4">
                 <p class="section-text-mini mb-4 text-center">{{ trans('file.home_section_2_text_2') }}</p>
             </div>
-            <div class="col-lg-4">
-                <p class="section-text-mini mb-4 text-center">{{ trans('file.home_section_2_text_3') }}</p>
+            <div class="col-lg-4 col-sm-4 col-4">
+                <p class="section-text-mini mb-4 text-center last-text">{{ trans('file.home_section_2_text_3') }}</p>
             </div>
         </div>
 </section>
@@ -98,16 +98,18 @@
             <div class="col-lg-1"></div>
             <div class="col-lg-5 mx-auto section_3_text">
                 <div class="row">
-                    <h1 class="section-heading-mini col-lg-12 text-center">{{ trans('file.home_section_4_header') }}</h1>
+                    <h1 class="section-heading-mini-2 col-lg-12 text-center">{{ trans('file.home_section_4_header') }}</h1>
                 </div>
                 <div class="row">
+                    <div class="col-lg-1"></div>
                     <img src="{{ url('img/index/head_of_text.png') }}" class="img-line img-fluid col-lg-1">
-                    <p class="text-faded section-description mb-5 col-lg-10">{{ trans('file.home_section_4_text_1') }}</p>
+                    <p class="text-faded section-description mb-5 col-lg-9">{{ trans('file.home_section_4_text_1') }}</p>
                     <div class="col-lg-1"></div>
                 </div>
                 <div class="row">
                     <div class="col-lg-1"></div>
-                    <p class="text-faded section-description mb-5 col-lg-10">{{ trans('file.home_section_4_text_2') }}</p>
+                    <div class="col-lg-1"></div>
+                    <p class="text-faded section-description mb-5 col-lg-9">{{ trans('file.home_section_4_text_2') }}</p>
                     <div class="col-lg-1"></div>
                 </div>
             </div>

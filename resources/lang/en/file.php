@@ -114,4 +114,7 @@
 
 		'home_section_6_header' => 'Join Bewin Community',
 		'wechat' => 'WeChat',
+
+		// news
+		'btn_read_more' => '阅读详细',
 	];

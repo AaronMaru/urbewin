@@ -130,7 +130,7 @@ img::-moz-selection {
     font-size: 18px;
 }
 
-#mainNav-eng{
+#mainNav-eng {
     border-bottom: 1px solid rgba(33, 37, 41, 0.1);
     background-color: #fff;
     font-family: DIN-Regular;
@@ -423,7 +423,8 @@ header.masthead p {
     margin: 5px;
 }
 
-footer, .card {
+footer,
+.card {
     font-size: 0.8em;
 }
 
@@ -434,44 +435,45 @@ footer, .card {
     padding-right: 50px;
 }
 
-.text-bold{
+.text-bold {
     font-weight: bold;
 }
 
-.img-banner-logo{
+.img-banner-logo {
     margin-top: 100px;
     height: 200px;
 }
 
 
 
+
 /*font-face*/
 
-@font-face{
+@font-face {
     font-family: 'PingFangSC-Light';
     src: url('/fonts/PingFangLight.tff');
     src: url('/font/PingFangLight.eof?#font-spider') format('embedded-opentype'),
-        url('../font/PingFang-SC-Light.ttf') format('truetype'),
-        url('/fonts/PingFangLight.svg') format('svg');
+    url('../font/PingFang-SC-Light.ttf') format('truetype'),
+    url('/fonts/PingFangLight.svg') format('svg');
 }
 
-@font-face{
+@font-face {
     font-family: 'PingFangSC-Regular';
     src: url('/fonts/PingFang-SC-Regular.tff');
     src: url('/font/PingFang-SC-Regular.eof?#font-spider') format('embedded-opentype'),
-        url('../font/PingFang-SC-Regular.ttf') format('truetype'),
-        url('/fonts/PingFang-SC-Regular.svg') format('svg');
+    url('../font/PingFang-SC-Regular.ttf') format('truetype'),
+    url('/fonts/PingFang-SC-Regular.svg') format('svg');
 }
 
-@font-face{
+@font-face {
     font-family: 'PingFang-SC-Bold';
     src: url('/fonts/PingFang-SC-Bold.tff');
     src: url('/font/PingFang-SC-Bold.eof?#font-spider') format('embedded-opentype'),
-        url('../font/PingFang-SC-Bold.ttf') format('truetype'),
-        url('/fonts/PingFang-SC-Bold.svg') format('svg');
+    url('../font/PingFang-SC-Bold.ttf') format('truetype'),
+    url('/fonts/PingFang-SC-Bold.svg') format('svg');
 }
 
-.embed-responsive{
+.embed-responsive {
     position: static;
 }
 
@@ -510,46 +512,50 @@ footer, .card {
 }
 
 .card-footer {
-	border: none;
-	background-color: #fbfbff;
+    border: none;
+    background-color: #fbfbff;
 }
 
-.btn-news{
+.btn-news {
     margin-right: 80px;
-    background-color: #5b72c6 !important;
 }
+
 
 /*app*/
-.app-section-1{
+
+.app-section-1 {
     margin-top: 100px;
 }
 
-.app-section-1-text{
+.app-section-1-text {
     padding-top: 100px;
 }
 
-.app-section-text-mini{
+.app-section-text-mini {
     color: #8FA0CF;
     font-size: 28px;
     font-family: PingFangSC-Light;
 }
 
 
-.app-section-2-text{
+.app-section-2-text {
     padding-top: 150px;
 }
 
 
+
 /*community*/
-.community-section-1{
+
+.community-section-1 {
     padding: 0;
     margin-top: 50px;
 }
 
-.community-section-6{
+.community-section-6 {
     padding: 0;
     margin-bottom: 150px;
 }
+
 
 
 /*join us*/
@@ -561,7 +567,7 @@ footer, .card {
     font-family: PingFang-SC-Bold;
 }
 
-.join-us-section-2{
+.join-us-section-2 {
     padding: 0;
 }
 
@@ -577,7 +583,7 @@ footer, .card {
     font-family: PingFangSC-Light;
 }
 
-.footer-text{
+.footer-text {
     color: #5b72c6;
     margin-top: 15px;
 }
@@ -586,10 +592,38 @@ footer, .card {
     text-transform: none;
 }
 
-@font-face{
+@font-face {
     font-family: 'DIN-Regular';
     src: url('/fonts/DIN-Regular.tff');
     src: url('/font/DIN-Regular.eof?#font-spider') format('embedded-opentype'),
-        url('../font/DIN-Regular.ttf') format('truetype'),
-        url('/fonts/DIN-Regular.svg') format('svg');
+    url('../font/DIN-Regular.ttf') format('truetype'),
+    url('/fonts/DIN-Regular.svg') format('svg');
+}
+
+
+.news-text {
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.news-title {
+    color: #2F57CB;
+    font-family: PingFangSC-Regular;
+    font-size: 36px;
+    letter-spacing: 3px;
+}
+
+
+.news-date {
+    color: #8FA0CF;
+    font-family: PingFangSC-Regular;
+    font-size: 20px;
+    letter-spacing: 3px;
+    margin-top: 20px;
+}
+
+.news-show-titlel{
+    color: #2F57CB;
+    font-size: 50px;
+    font-family: PingFang-SC-Bold;
 }
