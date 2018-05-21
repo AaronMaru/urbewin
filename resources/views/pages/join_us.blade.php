@@ -14,10 +14,10 @@
     <div class="container my-auto">
         <div class="row">
             <div class="col-lg-1 col-md-1"></div>
-            <div class="col-lg-5 col-md-5 col-sm-6 mx-auto">
+            <div class="col-lg-5 col-md-5 col-sm-6 mx-auto d-flex justify-content-center">
                 <div class="row">
                     <div class="col-lg-2"></div>
-                    <div class="card col-lg-9" style="width: 18rem; height: 50rem">
+                    <div class="card col-lg-9" style="height: 50rem">
                         <div class="card-body">
                             <div class="card-title mx-auto text-center join-us-section-text-mini">{{ trans('file.join_us_card_1_header') }}</div>
                             <div class="row text-center">
@@ -52,7 +52,7 @@
             <div class="col-lg-5 col-md-5 col-sm-6 mx-auto">
                 <div class="row">
                     <div class="col-lg-1"></div>
-                    <div class="card col-lg-9" style="width: 18rem; height: 50rem">
+                    <div class="card col-lg-9" style="height: 50rem">
                         <div class="card-body">
                             <div class="card-title mx-auto join-us-section-text-mini text-center">{{ trans('file.join_us_card_2_header') }}</div>
                             <div class="row text-center">
@@ -95,7 +95,7 @@
             <div class="col-lg-5 col-md-5 col-sm-6 mx-auto">
                 <div class="row">
                     <div class="col-lg-2"></div>
-                    <div class="card col-lg-9 increase-width" style="width: 18rem; height: 50rem">
+                    <div class="card col-lg-9 increase-width" style="height: 50rem">
                         <div class="card-body">
                             <div class="card-title mx-auto join-us-section-text-mini text-center">{{ trans('file.join_us_card_3_header') }}</div>
                             <div class="row text-center">
@@ -136,7 +136,7 @@
             <div class="col-lg-5 col-md-5 col-sm-6 mx-auto">
                 <div class="row">
                     <div class="col-lg-1"></div>
-                    <div class="card col-lg-9 increase-width" style="width: 18rem; height: 50rem">
+                    <div class="card col-lg-9 increase-width" style="height: 50rem">
                         <div class="card-body">
                             <div class="card-title mx-auto join-us-section-text-mini text-center">{{ trans('file.join_us_card_4_header') }}</div>
                             <div class="row text-center">
@@ -180,7 +180,7 @@
             <div class="col-lg-5 col-md-5 mx-auto">
                 <div class="row">
                     <div class="col-lg-2"></div>
-                    <div class="card col-lg-9" style="width: 18rem; height: 50rem">
+                    <div class="card col-lg-9" style="height: 50rem">
                         <div class="card-body">
                             <div class="card-title mx-auto join-us-section-text-mini text-center">{{ trans('file.join_us_card_5_header') }}</div>
                             <div class="row text-center">
