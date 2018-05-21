@@ -13,13 +13,13 @@
             <!-- Project One -->
         <div class="row">
             <div class="col-lg-1"></div>
-            <div class="col-lg-6 col-md-8">
+            <div class="col-lg-6 col-md-8 col-sm-12">
                 <h3 class="news-show-title">{{ $news->title_zh }}</h3>
                 <p class="news-date">{{ $news->created_at->format('Y.m.d') }}</p>
             </div>
-            <div class="col-lg-4 col-md-4">
+            <div class="col-lg-4 col-md-4 col-sm-12">
                 <a href="#">
-                    <img class="img-fluid rounded mb-3 mb-md-0 float-right" src="{{ url('images/news/' . $news->image) }}" alt="" width="180px" height="180px">
+                    <img class="img-fluid rounded mb-3 mb-md-0 float-right" src="{{ url('images/news/' . $news->image) }}" alt="">
                 </a>
             </div>
             <div class="col-lg-1"></div>

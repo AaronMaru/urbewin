@@ -14,18 +14,18 @@
         @foreach ($news as $new)
             <div class="row news-list">
                 <div class="col-lg-1"></div>
-                <div class="col-lg-4 col-md-4">
+                <div class="col-lg-4 col-md-6 col-sm-6">
                     <a href="#">
                         <img class="img-fluid rounded mb-3 mb-md-0" src="{{ url('images/news/' . $new->image) }}" alt="" width="360px" height="240px">
                     </a>
                 </div>
-                <div class="col-lg-6 col-md-6 news-text">
+                <div class="col-lg-6 col-md-6 col-sm-6 news-text">
                     @if(App::getLocale()=='zh')
                         <div class="row">
-                            <div class="col-lg-8">
+                            <div class="col-lg-8 col-sm-12">
                                 <h3 class="news-title">{{ $new->title_zh }}</h3>
                             </div>
-                            <div class="col-lg-4">
+                            <div class="col-lg-4 col-sm-12">
                                 <h3 class="news-date pull-right">{{ $new->created_at->format('Y.m.d') }}</h3>
                             </div>
                         </div>
@@ -34,10 +34,10 @@
                         </div>
                     @else
                         <div class="row">
-                            <div class="col-lg-8">
+                            <div class="col-lg-8 col-sm-12">
                                 <h3 class="news-title">{{ $new->title_eng }}</h3>
                             </div>
-                            <div class="col-lg-4">
+                            <div class="col-lg-4 col-sm-12">
                                 <h3 class="news-date pull-right">{{ $new->created_at->format('Y.m.d') }}</h3>
                             </div>
                         </div>

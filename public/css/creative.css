@@ -506,7 +506,15 @@ footer,
 .mini-text-banner-logo {
     letter-spacing: 5px;
 }
+.fix-margin {
+    margin-left: 40px;
+}
 
+.fix-padding{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: 40px;
+}
 
 @media (min-width: 576px) and (max-width: 767.98px) {
     .first-text {
@@ -527,6 +535,7 @@ footer,
     }
 }
 
+/*Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575.98px) {
     .first-text {
         margin-left: 0;
@@ -535,17 +544,39 @@ footer,
     .last-text {
         margin-right: 0;
     }
+    .section_3_text{
+        margin-top: 0;
+    }
+    .section-text{
+        margin-bottom: 10px;
+    }
+    .section-heading-mini{
+        margin : 0;
+    }
+
+    .fix-margin {
+        margin-left: 0;
+    }
+
+    .fix-padding{
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: 0;
+    }
+
+    .section-heading-mini{
+        margin-bottom: 10px;
+    }
+
+    .section-heading-mini-2{
+        margin-bottom: 10px;
+    }
+
+    .section-description-fix-margin{
+        margin-left: -10px;
+    }
 }
 
-.fix-margin {
-    margin-left: 40px;
-}
-
-.fix-padding{
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: 40px;
-}
 
 .fix-no-header-text{
     margin-top: 50px;

@@ -46,4 +46,11 @@
             $(this).addClass('active');
         }
     });
+
+    if ($(window).width() < 960) {
+       $('#footer').addClass('d-flex justify-content-center');
+       $('.news-date').removeClass('pull-right');
+       $('.img-fluid').removeClass('float-right');
+    }
+
 })(jQuery); // End of use strict

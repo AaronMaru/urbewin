@@ -64,8 +64,10 @@
         }
     });
 
-   if ($(window).width() < 960) {
-       $("#logo").attr('src', 'images/new_logo/blue.png');
+    if ($(window).width() < 960) {
+       $('#logo').attr('src', 'images/new_logo/blue.png');
+       $('.remove').remove();
+       $('#footer').addClass('d-flex justify-content-center')
     }
 
 })(jQuery); // End of use strict

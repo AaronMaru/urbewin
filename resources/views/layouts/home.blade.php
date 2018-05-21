@@ -24,7 +24,9 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top menu" id="mainNav">
         <div class="container-fluid">
-            <img src="{{ url('images/new_logo/white.png') }}" width="50" height="50px" id="logo" class="img-fluid">
+            <a href="/">
+                <img src="{{ url('images/new_logo/white.png') }}" width="50" height="50px" id="logo" class="img-fluid">
+            </a>
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -100,17 +102,21 @@
             <div class="row">
                 <div class="col-lg-1"></div>
                 <div class="col-lg-10">
-                    <div class="pull-left">
-                        <div class="row">
-                            <img src="{{ url('images/new_logo/blue.png') }}" width="25px" height="40px">
-                            <p class="text-center footer-left footer-text">© U are beWiN Team. 2018</p>
+                    <div class="row">
+                        <div class="col-lg-10 col-12" id="footer">
+                            <div class="row">
+                                <img src="{{ url('images/new_logo/blue.png') }}" width="25px" height="40px">
+                                <p class="text-center footer-left footer-text">© U are beWiN Team. 2018</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="pull-right">
-                        <div class="row footer-right">
-                            <a href="javascript:submitLang('zh')" class="lang">中文</a>
-                            <p class="lang">|</p>
-                            <a href="javascript:submitLang('en')" class="lang">ENG</a>
+                        <div class="col-lg-2 col-12 d-flex justify-content-center">
+                            <div class="pull-right">
+                                <div class="row footer-right">
+                                    <a href="javascript:submitLang('zh')" class="lang">中文</a>
+                                    <p class="lang">|</p>
+                                    <a href="javascript:submitLang('en')" class="lang">ENG</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

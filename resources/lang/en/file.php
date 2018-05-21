@@ -29,9 +29,9 @@
 		'home_section_4_text_2' => 'On account of UWN Consensus Agreement, varieties of arbitration mechanisms will be set up to deal with dispute.',
 
 		'home_section_5_text_1' => 'Please download the white paper to find more details',
-		'home_section_5_text_2' => 'Download the white paper',
+		'home_section_5_text_2' => 'Download',
 		'home_section_5_text_3' => 'Start to use Bewin Wallet',
-		'home_section_5_text_4' => 'Download the wallet',
+		'home_section_5_text_4' => 'Download',
 
 		//app
 		'app_section_1_header' => 'Bewin Wallet',
