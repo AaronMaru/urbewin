@@ -97,7 +97,7 @@
         <div class="row">
             <div class="col-lg-6 mx-auto section_3_text">
                 <div class="row">
-                    <h1 class="section-heading-mini-2 col-lg-12 fix-margin">{{ trans('file.home_section_4_header') }}</h1>
+                    <h1 class="section-heading-mini-2 col-lg-12 fix-margin text-center">{{ trans('file.home_section_4_header') }}</h1>
                 </div>
                 <div class="row fix-padding">
                     <img src="{{ url('img/index/head_of_text.png') }}" class="img-line img-fluid col-lg-1 remove">
