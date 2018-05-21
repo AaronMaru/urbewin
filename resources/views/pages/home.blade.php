@@ -133,6 +133,7 @@
                     @else
                         <a href="/file/white_paper_zh.pdf" class="btn" download>{{ trans('file.home_section_5_text_2') }}</a>
                     @endif
+
                 </div>
                 <br>
                 <div>
