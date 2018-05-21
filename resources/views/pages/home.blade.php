@@ -128,7 +128,11 @@
                 <div>
                     <img src="{{ url('img/index/download_whitebook.png') }}" class="img-fluid">
                     <p class="text-faded section-text-mini">{{ trans('file.home_section_5_text_1') }}</p>
-                    <a href="#" class="btn">{{ trans('file.home_section_5_text_2') }}</a>
+                    @if(App::getLocale()=='en')
+                        <a href="/file/white_paper_en.pdf" class="btn" download>{{ trans('file.home_section_5_text_2') }}</a>
+                    @else
+                        <a href="/file/white_paper_zh.pdf" class="btn" download>{{ trans('file.home_section_5_text_2') }}</a>
+                    @endif
                 </div>
                 <br>
                 <div>
