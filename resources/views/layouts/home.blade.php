@@ -45,7 +45,7 @@
                         <a class="nav-link js-scroll-trigger" href="/community">{{ trans('file.menu_community') }}</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="/join-us">{{ trans('file.menu_join_us') }}</a>
+                        <a class="nav-link js-scroll-trigger" href="{{ url('/join-us') }}">{{ trans('file.menu_join_us') }}</a>
                     </li>
                     <li class="nav-item">
                        <a class="nav-link js-scroll-trigger">|</a>
