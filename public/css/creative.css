@@ -258,7 +258,7 @@ header.masthead p {
 
 @media (min-width: 1200px) {
     header.masthead h1 {
-        font-size: 4.5rem;
+        font-size: 5rem;
     }
 }
 
@@ -444,9 +444,6 @@ footer,
     height: 200px;
 }
 
-
-
-
 /*font-face*/
 
 @font-face {
@@ -471,6 +468,14 @@ footer,
     src: url('/font/PingFang-SC-Bold.eof?#font-spider') format('embedded-opentype'),
     url('../font/PingFang-SC-Bold.ttf') format('truetype'),
     url('/fonts/PingFang-SC-Bold.svg') format('svg');
+}
+
+@font-face {
+    font-family: 'PingFang-SC-Super-Light';
+    src: url('/fonts/PingFang-SC-Super-Light.tff');
+    src: url('/font/PingFang-SC-Super-Light.eof?#font-spider') format('embedded-opentype'),
+    url('../font/PingFang-SC-Super-Light.ttf') format('truetype'),
+    url('/fonts/PingFang-SC-Super-Light.svg') format('svg');
 }
 
 @font-face {
@@ -500,9 +505,7 @@ footer,
 .section_2_row_2 {
     margin-top: 22px;
 }
-.text-banner-logo {
-    letter-spacing: 5px;
-}
+
 .mini-text-banner-logo {
     letter-spacing: 5px;
 }
@@ -649,4 +652,9 @@ footer,
 .dd{
     margin-top: 50px;
     margin-bottom: 80px;
+}
+
+.text-banner-logo {
+    letter-spacing: 5px;
+    font-family: PingFang-SC-Super-Light;
 }
