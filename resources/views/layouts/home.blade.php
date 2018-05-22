@@ -36,7 +36,7 @@
                         <a class="nav-link js-scroll-trigger" href="/">{{ trans('file.menu_home') }}</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="/news">{{ trans('file.menu_news') }}</a>
+                        <a class="nav-link js-scroll-trigger" href="{{ url('/news') }}">{{ trans('file.menu_news') }}</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link js-scroll-trigger" href="/app">{{ trans('file.menu_app') }}</a>
