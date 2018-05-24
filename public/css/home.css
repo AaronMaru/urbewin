@@ -1,7 +1,19 @@
+
+@media screen and (max-width: 768px) {
+	.nav-line {
+		display:none;
+	}
+}
+
 .img-line{
     width: 6px;
     height: 80px;
     margin: 0;
+}
+
+.img-mode {
+	width : 100%;
+	height : 32.1%;
 }
 
 .menu-line{
