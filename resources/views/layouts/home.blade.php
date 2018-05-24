@@ -48,7 +48,7 @@
                         <a class="nav-link js-scroll-trigger" href="{{ url('/join-us') }}">{{ trans('file.menu_join_us') }}</a>
                     </li>
                     <li class="nav-item">
-                       <a class="nav-link js-scroll-trigger">|</a>
+                       <a class="nav-link js-scroll-trigger nav-line">|</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
